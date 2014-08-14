@@ -1,0 +1,186 @@
+body{
+    width: 1000px;
+    height: 700px;
+    background: #C6E2FF;
+}
+.AreaCentralSaida{
+    width: 110px;
+    height: 60px;
+    border: dotted 2px;
+    margin-left: 45px;
+    margin-top: 20px;
+  
+}
+.titulos{
+	width: 350px;
+    height: 60px;
+    margin-left: 165px;
+    margin-top: 80px;
+	
+}
+.camposForm{
+	width:70px;
+	height:250px;
+	margin-left:45px;
+	margin-top:20px;
+	
+}
+
+.camposTable{
+	width:200px;
+	height:60px;
+	margin-left:90px;
+	margin-top:100px;
+	
+}
+
+.logomarca{
+    width: 150px;
+    height: 150px;
+    margin-left: 180px;
+    margin-bottom:-55px;
+    margin-top: 19px;
+}
+
+.AreaCentralChegada{
+    width: 110px;
+    height: 60px;
+   
+    margin-left: 270px;
+    margin-top: 22px;
+   
+}
+
+.AreaGeral{
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    
+
+}
+
+.AreaInicialFiguras{
+    width:200px;
+    height:520px;
+    background:#63B8FF;
+    margin-left: 20px;
+    float:left;
+    margin-top:40px;
+    margin-left: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 10px 10px 1px #FFFAFA;
+    -webkit-box-shadow:inset 10px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+}
+
+.AreaFinalFiguras{
+    width:720px;
+    height:520px;
+    background: #F8F8FF;
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+
+}
+
+
+.CampoInicio{
+    width:100px;
+    height:50px;
+    border: dotted 2px;;
+    text-align: center;
+    background: #FFF;
+    border-color: #63B8FF;
+    
+    
+}
+
+.CampoLeia{
+    width:100px;
+    height:50px;
+    border: dotted 2px;;
+    border-color: #63B8FF;
+    text-align: center;
+      
+}
+
+.CampoProcessa{
+    width:100px;
+    height:50px;
+    border: dotted 2px;;
+    text-align: center;
+    border-color: #63B8FF;
+    
+}
+
+.CampoFim{
+    width:100px;
+    height:50px;
+    border: dotted 2px;
+    text-align: center;
+    border-color: #63B8FF;
+    
+   
+}
+
+.CampoEscreva{
+    width:100px;
+    height:50px;
+    border: dotted 2px;;
+    border-color: #63B8FF;
+    
+}
+
+#Inicio{
+    width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    
+}
+#Leia{
+    width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    border-radius: 10px;
+}
+#Leia2{
+     width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    border-radius: 10px;
+}
+#Processa{
+    width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    border-radius: 10px;
+}
+#Escreva{
+    width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+#Fim{
+    width:100px;
+    height:50px;
+    border: dotted;
+    text-align: center;
+    border-radius: 10px;
+}
