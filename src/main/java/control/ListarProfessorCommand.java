@@ -4,7 +4,7 @@
  */
 package control;
 
-import beans.Professor;
+//import beans.Professor;
 import dao.UsuarioDAO;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -23,15 +23,15 @@ public class ListarProfessorCommand implements Icommand{
     public String execute(HttpServletRequest request) {
         String nome = request.getParameter("nome");
         
-        List<Professor> professores = new ArrayList<>();
+//        List<Professor> professores = new ArrayList<>();
         
-        try {
-        professores = new UsuarioDAO().ListarProfessoresPorNome(nome);
-        } catch (SQLException ex) {
-            Logger.getLogger(ListarProfessorCommand.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        request.setAttribute("professor", professores);
-        System.out.println("+++++++++++++size + = " + professores.size());
+//        try {
+////        professores = new UsuarioDAO().ListarProfessoresPorNome(nome);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(ListarProfessorCommand.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        request.setAttribute("professor", professores);
+//        System.out.println("+++++++++++++size + = " + professores.size());
         return ("ListarProfessorPorNome.jsp");
         
     }

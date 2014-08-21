@@ -5,6 +5,7 @@
 package control;
 
 import autenticacao.UsuarioLogado;
+import beans.Aluno;
 import beans.Usuario;
 import dao.AutenticacaoDAO;
 import dao.UsuarioDAO;
@@ -31,9 +32,14 @@ public class LogonCommand implements Icommand{
             Logger.getLogger(LogonCommand.class.getName()).log(Level.SEVERE, null, ex);
         }
         if(u != null){
+            String url = "";
+            if(u.getClass().equals(Aluno.class)){
+                url = "Aluno.jsp";
+            }else if(u.getClass().equals(Usuario.class)){
+                url = "Professor.jsp";
+            }
             request.getSession().setAttribute("usuario", u);
-            System.out.println(request.getSession().getAttribute("usuario"));
-            return "BemVindo.jsp";
+            return url;
         }else{
             return "index.jsp";
         }

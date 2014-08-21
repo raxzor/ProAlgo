@@ -5,7 +5,7 @@
 package testes;
 
 import beans.Aluno;
-import beans.Professor;
+//import beans.Professor;
 import conectionbd.ConnectionPostgres;
 import dao.AlunoDAO;
 import dao.UsuarioDAO;
@@ -24,7 +24,7 @@ public class App {
 //        System.out.println(connectionPostgres.getconection() == null);
        
         UsuarioDAO professorDAO = new UsuarioDAO();
-        Professor professor = new Professor();
+//        Professor professor = new Professor();
 //        professorDAO.inserirAluno(professor);
         AlunoDAO alunoDAO = new AlunoDAO();
         Aluno aluno = new Aluno();
@@ -51,13 +51,13 @@ public class App {
 //            System.out.println(a.getTuma());
 //         }
 //         
-            professor.setNome("Viviano");
-            professor.setLogin("vivi");
-            professor.setSenha("123");
-            professor.setCurso("ADS");
-            professor.setInstituicao("IFPBAAAA");
-            
-          professorDAO.atualizarProfessor(professor, 1);
+//            professor.setNome("Viviano");
+//            professor.setLogin("vivi");
+//            professor.setSenha("123");
+//            professor.setCurso("ADS");
+//            professor.setInstituicao("IFPBAAAA");
+//            
+//          professorDAO.atualizarProfessor(professor, 1);
             
         
     }

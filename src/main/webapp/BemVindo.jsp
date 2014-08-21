@@ -18,7 +18,7 @@
 			<div class="welcome">
                             <div class="welcome-user">Bem vindo! <b>${usuario.nome}</b></div>
 				<div class="welcome-text">O Projeto Algo+ foi desenvolvido por um aluno do curso de Análise e Desenvolvimento de Sistemas do Insituto Federal de Educação, Ciência e Tecnologia da Paraíba, com o propósito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos através do uso de fluxogramas.</div>
-				<div class="home"><a href="index.jsp">Inicio</a></div>
+				<div class="home"><a href="Inicio.jsp">Inicio</a></div>
 			</div>
 		</div>
     </body>

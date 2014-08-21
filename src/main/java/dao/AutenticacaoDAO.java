@@ -35,7 +35,8 @@ public class AutenticacaoDAO {
             Integer idProfessor = rs.getInt("id_professor");
             Usuario professor;
             Aluno aluno;
-            if (idAluno == null) {
+            System.out.println("idAluno = " + idAluno);
+            if (idAluno == 0) {
                 professor = new UsuarioDAO().getProfessor(idProfessor);
                 professor.setLogin(rs.getString("login"));
                 professor.setSenha(rs.getString("senha"));

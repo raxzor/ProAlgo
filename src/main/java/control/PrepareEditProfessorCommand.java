@@ -4,7 +4,7 @@
  */
 package control;
 
-import beans.Professor;
+//import beans.Professor;
 import dao.UsuarioDAO;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -19,14 +19,14 @@ public class PrepareEditProfessorCommand implements Icommand{
 
     @Override
     public String execute(HttpServletRequest request) {
-        Professor professor = new Professor();
+//        Professor professor = new Professor();
         Integer idProfessor = new  Integer(request.getParameter("idProfessor"));
-        try {
-           professor = new UsuarioDAO().getProfessor(idProfessor);
-        } catch (SQLException ex) {
-            Logger.getLogger(PrepareEditProfessorCommand.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        request.setAttribute("professor", professor);
+//        try {
+//           professor = new UsuarioDAO().getProfessor(idProfessor);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(PrepareEditProfessorCommand.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        request.setAttribute("professor", professor);
         return ("CadastrarProfessor.jsp");
     
     }

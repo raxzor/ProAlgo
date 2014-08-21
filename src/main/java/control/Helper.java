@@ -20,11 +20,12 @@ public class Helper {
 //        commands.put(1, new ListarProfessorCommand());
 //        commands.put(2, new CadastrarProfessorCommand());
         commands.put(3, new CadastrarAlunoCommand());
-//        commands.put(4, new ListarAlunoCommand());
+        commands.put(4, new ListarAlunoCommand());
 //        commands.put(5, new DeletarProfessorCommand());
 //        commands.put(6, new PrepareEditProfessorCommand());
 //        commands.put(7, new DeletarAlunoCommand());
 //        commands.put(8, new EditarAlunoCommand());
+        commands.put(9, new LogoutCommand());
         commands.put(10, new LogonCommand());
         
     }

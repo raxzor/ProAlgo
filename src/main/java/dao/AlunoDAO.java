@@ -23,7 +23,7 @@ public class AlunoDAO {
     Connection con;
     
      public Integer inserirAluno(Aluno a) throws SQLException{
-        
+         System.out.println("Turmmaaa" + a.getTurma());
         con = cp.getconection();
         String sql = "INSERT INTO aluno(nome, curso, tipo_deficiencia, turma, instituicao, id_professor) VALUES (?, ?, ?, ?, ?, ?)";
         PreparedStatement ps = con.prepareStatement(sql);
@@ -92,8 +92,9 @@ public class AlunoDAO {
     
     public List<Aluno> ListarAlunosPorNome(String nome) throws SQLException{
         con = cp.getconection();
-        String sql = "SELECT * from aluno";
+        String sql = "SELECT * from aluno where nome ilike ?";
         PreparedStatement ps = con.prepareStatement(sql, ResultSet.CONCUR_UPDATABLE, ResultSet.TYPE_SCROLL_SENSITIVE);
+        ps.setString(1, ("%" + nome + "%"));
         ResultSet rs = ps.executeQuery();
         Aluno a = null;
         List<Aluno> alunos = new ArrayList<Aluno>();
@@ -105,8 +106,8 @@ public class AlunoDAO {
             a.setTipoDeficiencia(rs.getString("tipo_deficiencia"));
             a.setTurma(rs.getString("turma"));
             a.setInstituicao(rs.getString("instituicao"));
-            a.setLogin(rs.getString("login"));
-            a.setSenha(rs.getString("senha"));
+//            a.setLogin(rs.getString("login"));
+//            a.setSenha(rs.getString("senha"));
             alunos.add(a);
             
             

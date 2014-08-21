@@ -18,139 +18,28 @@
     <body>
 <div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
 <ul id="menu">
-     <li><a href="index.html">Página Inicial</a><!-- Inicio item Sobre -->
-	</li><!-- Fim item P�gina Inicial -->
+     <li><a href="index.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	
-	<li><a href="#" class="drop">Sobre</a><!-- Inicio item Sobre -->
-    
-        <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
-    
-            <div class="col_2">
-                <h2>Bem vindo!</h2>
-            </div>
-    
-            <div class="col_2">
-                <p>O Projeto Algo+ foi desenvolvido por uma aluno do curso de An�lise e Desenvolvimento de Sistemas do Insituto Federal de Educa��o, Ci�ncia e Tecnologia da Para�ba, com o prop�sito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos atrav�s do uso de fluxogramas.</p>   
-           </div>
-	</div><!-- Fim do container Sobre -->
-    
-    </li><!-- Fim item Sobre -->
-
-	<li><a href="#" class="drop">Tutorial</a><!-- Inicio item Sobre -->
-    
-        <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
-    
-            <div class="col_2">
-                <p>1� Passo: Escolha a Miss�o</p>   
-            </div>
-			<div class="col_2">
-                <p>2� Passo: Leia o enunciado da quest�o!</p>   
-            </div>
-			<div class="col_2">
-                <p>3� Passo: Arraste as figuras aos seus respectivos campos.</p>   
-            </div>
-			<div class="col_2">
-                <h2>Vamos come�ar?</h2>
-           </div>
-            
-            
-            
-        </div><!-- Fim do container Sobre -->
-    
-    </li><!-- Fim item Sobre -->
 	
-	<li><a href="#" class="drop">Miss�es</a><!-- Begin 3 columns Item -->
-    
-        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
-            
-            <div class="col_3">
-                <h2>Lista de Miss�es</h2>
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="soma.html">Somar</a></li>
-                    <li><a href="media.html">M�dia Aritim�tica</a></li>
-                    <li><a href="maiorIdade.html">Maior Idade</a></li>
-                    <li><a href="imc.html">IMC</a></li>
-                    <li><a href="numeroPar.html">N�meros Pares</a></li>
-                </ul>   
-    
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">ThemeForest</a></li>
-                    <li><a href="#">GraphicRiver</a></li>
-                    <li><a href="#">ActiveDen</a></li>
-                    <li><a href="#">VideoHive</a></li>
-                    <li><a href="#">3DOcean</a></li>
-                </ul>   
-    
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Logo</a></li>
-                    <li><a href="#">Flash</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">More...</a></li>
-                </ul>   
-    
-            </div>
-         </div><!-- End 3 columns container -->
+        <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
+        <li><a href="ListarAlunosPorNome.jsp">Editar Aluno</a></li>
+        <li><a href="ListarAlunosPorNome.jsp">Deletar Aluno</a></li>
+        <li><a href="CadastrarAluno.jsp">Estatísticas do Aluno</a></li>
         
-    </li><!-- End 3 columns Item -->
-    <li class="menu_right"><a href="index.html">Sair</a><!-- Inicio item Sobre -->
+    </li>
+	
+  
+    <li class="menu_right"><a href="index.jsp">Sair</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
         <div class="AreaGeral">
-        <div class="AreaInicialFiguras">
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	<div id="Inicio" draggable="true"  ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Inicio
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	<div id="Leia" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Leia
-	</div>
-        </div>
-        
-	<div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Leia2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Leia
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Processa" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Processa
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Escreva" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Escreva
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Fim" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"  >
-	Fim
-	</div>
-        </div>
-        </div>
-
-        <div class="AreaFinalFiguras">
+       
+        <div class="AreaFinalFigurasProfessor">
             <div class="camposForm">
 			<h2 class="titulos">Cadastrar novo Aluno <b>${usuario.nome}</b></h2>
+                        <c:if test="${isNew ne null}">
+                            <b>kkkkkkkkkkKKKKKKKKKKKKKKKKKKKKKKKK</b>
+                        </c:if>
                         <form action="Controler" method="post">
                             <input type="hidden" name="action" value="3">
                         Nome:  <input type="text" name="nome" value="${aluno.nome}"> </br>
@@ -159,7 +48,7 @@
                         Instituição: <input type="text" name="instituicao"  value="${aluno.instituicao}"> </br>
                         Tipo de Deficiência <input type="text" name="tipoDeficiencia"  value="${aluno.tipoDeficiencia}"></br>
                         Curso: <input type="text" name="curso"  value="${aluno.curso}"> 
-                        Turma: <input type="text" name="t"  value="${aluno.turma}"> </br>
+                        Turma: <input type="text" name="turma"  value="${aluno.turma}"> </br>
                         <c:choose>
                             <c:when test="${aluno.id eq null}">
                                 <input type="submit" value="cadastrar">

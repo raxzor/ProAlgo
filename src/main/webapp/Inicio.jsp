@@ -13,7 +13,7 @@
     <body>
 <div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
 <ul id="menu">
-     <li><a href="index.jsp">P�gina Inicial</a><!-- Inicio item Sobre -->
+     <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 	
 	<li><a href="#" class="drop">Sobre</a><!-- Inicio item Sobre -->
@@ -25,7 +25,7 @@
             </div>
     
             <div class="col_2">
-                <p>O Projeto Algo+ foi desenvolvido por uma aluno do curso de An�lise e Desenvolvimento de Sistemas do Insituto Federal de Educa��o, Ci�ncia e Tecnologia da Para�ba, com o propósito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos atrav�s do uso de fluxogramas.</p>   
+                <p>O Projeto Algo+ foi desenvolvido por uma aluno do curso de Análise e Desenvolvimento de Sistemas do Insituto Federal de Educação, Ciência e Tecnologia da Paraíba, com o propósito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos através do uso de fluxogramas.</p>   
            </div>
 	</div><!-- Fim do container Sobre -->
     
@@ -36,16 +36,16 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p>1� Passo: Escolha a Miss�o</p>   
+                <p>1º Passo: Escolha a Missões</p>   
             </div>
 			<div class="col_2">
-                <p>2� Passo: Leia o enunciado da quest�o!</p>   
+                <p>2º Passo: Leia o enunciado da questão!</p>   
             </div>
 			<div class="col_2">
-                <p>3� Passo: Arraste as figuras aos seus respectivos campos.</p>   
+                <p>3º Passo: Arraste as figuras aos seus respectivos campos.</p>   
             </div>
 			<div class="col_2">
-                <h2>Vamos come�ar?</h2>
+                <h2>Vamos começar?</h2>
            </div>
             
             
@@ -54,22 +54,22 @@
     
     </li><!-- Fim item Sobre -->
 	
-	<li><a href="#" class="drop">Miss�es</a><!-- Begin 3 columns Item -->
+	<li><a href="#" class="drop">Missões</a><!-- Begin 3 columns Item -->
     
         <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
             
             <div class="col_3">
-                <h2>Lista de Miss�es</h2>
+                <h2>Lista de Missões</h2>
             </div>
             
             <div class="col_1">
     
                 <ul class="greybox">
                     <li><a href="soma.html">Somar</a></li>
-                    <li><a href="media.html">M�dia Aritim�tica</a></li>
+                    <li><a href="media.html">Média Aritim�tica</a></li>
                     <li><a href="maiorIdade.html">Maior Idade</a></li>
                     <li><a href="imc.html">IMC</a></li>
-                    <li><a href="numeroPar.html">N�meros Pares</a></li>
+                    <li><a href="numeroPar.html">Números Pares</a></li>
                 </ul>   
     
             </div>

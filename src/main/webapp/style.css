@@ -51,6 +51,8 @@ body{
    
 }
 
+
+
 .AreaGeral{
     width: 1000px;
     height: 600px;
@@ -93,6 +95,21 @@ body{
 
 }
 
+.AreaFinalFigurasProfessor{
+    width:980px;
+    height:520px;
+    background: #F8F8FF;
+    margin-left: 10px;
+    margin-top: 40px;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+
+}
 
 .CampoInicio{
     width:100px;

@@ -27,7 +27,7 @@ public class Aluno extends Usuario{
         return turma;
     }
 
-    public void setTurma(String tuma) {
+    public void setTurma(String turma) {
         this.turma = turma;
     }
 

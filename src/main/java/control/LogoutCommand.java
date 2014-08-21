@@ -4,23 +4,18 @@
  */
 package control;
 
-//import beans.Professor;
 import javax.servlet.http.HttpServletRequest;
-
 
 /**
  *
  * @author Gilmar
  */
-public class EditarProfessorCommand implements Icommand{
+public class LogoutCommand implements Icommand{
 
     @Override
     public String execute(HttpServletRequest request) {
-//        Professor professor = new Professor();
-        
-        
-        
-        return ("CadastrarProfessor.jsp");
+        request.getSession().invalidate();
+        return "index.jsp";
     }
-   
+    
 }
