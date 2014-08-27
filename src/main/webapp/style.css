@@ -1,18 +1,44 @@
+.descricaoProblema{
+    width:350px;
+    height:120px;
+    background:#63B8FF;
+    margin-left: 20px;
+    float:left;
+    margin-top:40px;
+    margin-left: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 10px 10px 1px #FFFAFA;
+    -webkit-box-shadow:inset 10px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+}
+.textoInicial{
+    text-align: justify;
+    width: 550px;
+    margin-left: 180px;
+    margin-top: 50px;
+    color: #333333;
+}
+.TituloProAlgo{
+    margin-left: 390px;
+    margin-top: 90px;
+    color: #014464;
+    font-family: sans-serif;
+    font-style: italic;
+}
 body{
     width: 1000px;
     height: 700px;
     background: #C6E2FF;
 }
 .AreaCentralSaida{
-    width: 110px;
-    height: 60px;
-    border: dotted 2px;
     margin-left: 45px;
     margin-top: 20px;
   
 }
 .titulos{
-	width: 350px;
+    width: 350px;
     height: 60px;
     margin-left: 165px;
     margin-top: 80px;
@@ -43,12 +69,11 @@ body{
 }
 
 .AreaCentralChegada{
-    width: 110px;
-    height: 60px;
-   
-    margin-left: 270px;
+    width:180px;
+    height:100px;
+    margin-left: 200px;
     margin-top: 22px;
-   
+    
 }
 
 
@@ -64,7 +89,7 @@ body{
 }
 
 .AreaInicialFiguras{
-    width:200px;
+    width:350px;
     height:520px;
     background:#63B8FF;
     margin-left: 20px;
@@ -78,10 +103,24 @@ body{
     -webkit-box-shadow:inset 10px 10px 10px #F8F8FF;
     box-shadow:inset 0px 0px 15px #3299CC;
 }
+.AreaFinalFigurasAluno{
+    width:920px;
+    height:620px;
+    background: #F8F8FF;
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
 
+}
 .AreaFinalFiguras{
-    width:720px;
-    height:520px;
+    width:550px;
+    height:720px;
     background: #F8F8FF;
     margin-left: 40px;
     margin-top: 40px;
@@ -112,92 +151,213 @@ body{
 }
 
 .CampoInicio{
-    width:100px;
-    height:50px;
-    border: dotted 2px;;
+    width:150px;
+    height:65px;
+    border: dotted 1px;;
     text-align: center;
     background: #FFF;
     border-color: #63B8FF;
-    
-    
-}
-
-.CampoLeia{
-    width:100px;
-    height:50px;
-    border: dotted 2px;;
-    border-color: #63B8FF;
-    text-align: center;
-      
-}
-
-.CampoProcessa{
-    width:100px;
-    height:50px;
-    border: dotted 2px;;
-    text-align: center;
-    border-color: #63B8FF;
-    
-}
-
-.CampoFim{
-    width:100px;
-    height:50px;
-    border: dotted 2px;
-    text-align: center;
-    border-color: #63B8FF;
-    
    
 }
 
-.CampoEscreva{
-    width:100px;
-    height:50px;
-    border: dotted 2px;;
+.CampoLeia{
+    width:150px;
+    height:65px;
+    border: dotted 1px;
     border-color: #63B8FF;
+    text-align: center;
+    margin-top: -40px;
+      
+}
+
+.CampoLeia{
+    width:150px;
+    height:65px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-top: -40px;
+      
+}
+.CampoNao{
+    width:150px;
+    height:65px;
+    border: dotted 1px;;
+    text-align: center;
+    border-color: #63B8FF;
+    margin-top: -120px;
+    margin-left:170px;
+    
+}
+.CampoSim{
+    width:150px;
+    height:65px;
+    border: dotted 1px;;
+    text-align: center;
+    border-color: #63B8FF;
+    margin-top: -40px;
+    margin-left: -175px;
     
 }
 
-#Inicio{
-    width:100px;
-    height:50px;
-    border: dotted;
+.CampoEscreva1{
+   width:150px;
+     height:65px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
     text-align: center;
+    margin-top: -245px;
+}
+.CampoFimDireita{
+   width:150px;
+    height:65px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    background: #000;
+    margin-left: 175px;
+    margin-top: -35px;
+}
+
+.CampoFimEsquerda{
+   width:150px;
+    height:65px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: -175px;
+    background: #000;
+    margin-top: -120px;
     
+}
+
+.ExibeEsquerda{
+    width:150px;
+     height:65px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: -175px;
+    margin-top: -32px;
+}
+
+.ExibeDireita{
+    width:150px;
+    height:65px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: 175px;
+    margin-top: -125px;
+}
+
+
+#InicioIMC{
+    width:100px;
+    height:60px;
+    float: left;
+    padding-bottom: 15px;
 }
 #Leia{
-    width:100px;
-    height:50px;
-    border: dotted;
+    width:110px;
+    height:60px;
     text-align: center;
     border-radius: 10px;
+    float:left;
+    padding-bottom: 15px;
 }
 #Leia2{
-     width:100px;
-    height:50px;
-    border: dotted;
+   width:110px;
+    height:60px;
     text-align: center;
-    border-radius: 10px;
-}
-#Processa{
-    width:100px;
-    height:50px;
-    border: dotted;
-    text-align: center;
-    border-radius: 10px;
-}
-#Escreva{
-    width:100px;
-    height:50px;
-    border: dotted;
-    text-align: center;
-    border-radius: 10px;
+    float:left;
+    padding-bottom: 15px;
     
 }
-#Fim{
-    width:100px;
-    height:50px;
-    border: dotted;
+#FimIMC{ 
+    width:110px;
+    height:60px;
     text-align: center;
     border-radius: 10px;
+     float: left;
+     padding-right: 40px;
+     padding-bottom: 15px;
+}
+
+#LeiaAltura{
+    width:110px;
+    height:60px;
+     float: left;
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+
+#ExibePesoIdeal{
+    width:110px;
+    height:60px;
+     float: left;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    
+}
+
+#ExibeForaPeso{
+    width:110px;
+    height:60px;
+     float: left;
+    border-radius: 10px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+}
+#CondicaoSetaEsquerda{
+    width:110px;
+    height:60px;
+    float: left;
+    border-radius: 10px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+     
+}
+
+#CondicaoSetaDireita{
+   width:110px;
+    height:60px;
+    float: left;
+    padding-bottom: 15px;
+}
+
+#ProcessaIMC{
+    width:110px;
+    height:60px;
+   float: left;
+   padding-bottom: 15px;
+}
+#CondicaoIMC{
+    width:140px;
+    height:90px;
+   float: left;
+   padding-bottom: 15px;
+}
+
+#LeiaPeso{
+    width:110px;
+    height:60px;
+    margin-left: 15px;
+    float: left;
+    padding-bottom: 15px;
+    
+}
+#InicioIMC{
+    width:110px;
+    height:60px;
+    padding-bottom: 15px;
+   
+}
+#Processa{
+    width:110px;
+    height:60px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    
 }

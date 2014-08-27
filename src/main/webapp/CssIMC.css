@@ -1,0 +1,356 @@
+body{
+    width: 1000px;
+    height: 700px;
+    background: #C6E2FF;
+}
+.AreaCentralSaida{
+    margin-left: 45px;
+    margin-top: 20px;
+  
+}
+.titulos{
+    width: 350px;
+    height: 60px;
+    margin-left: 165px;
+    margin-top: 80px;
+	
+}
+
+.textoInicial{
+    text-align: justify;
+    width: 600px;
+    margin-left: 180px;
+    color: #333333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.descricaoProblema{
+    width:950px;
+    height:100px;
+    background: #F8F8FF;
+    margin-left: 170px;
+    margin-top: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+}
+
+
+.camposForm{
+	width:70px;
+	height:250px;
+	margin-left:45px;
+	margin-top:20px;
+	
+}
+
+.camposTable{
+	width:200px;
+	height:60px;
+	margin-left:90px;
+	margin-top:100px;
+	
+}
+
+.logomarca{
+    width: 150px;
+    height: 150px;
+    margin-left: 180px;
+    margin-bottom:-55px;
+    margin-top: 19px;
+}
+
+.AreaCentralChegada{
+    width:180px;
+    height:100px;
+    margin-left: 200px;
+    margin-top: 22px;
+    
+}
+
+.AreaGeral{
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    
+
+}
+
+.AreaInicialFiguras{
+    width:350px;
+    height:520px;
+    background:#63B8FF;
+    margin-left: 20px;
+    float:left;
+    margin-top:15px;
+    margin-left: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 10px 10px 1px #FFFAFA;
+    -webkit-box-shadow:inset 10px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+}
+
+.AreaFinalFiguras{
+    width:560px;
+    height:620px;
+    background: #F8F8FF;
+    margin-left: 40px;
+    margin-top: 15px;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+
+}
+
+.AreaFinalFigurasProfessor{
+    width:980px;
+    height:520px;
+    background: #F8F8FF;
+    margin-left: 10px;
+    margin-top: 40px;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
+    -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
+    box-shadow:inset 0px 0px 15px #3299CC;
+
+}
+
+.CampoInicio{
+    width:110px;
+    height:60px;
+    border: dotted 1px;;
+    text-align: center;
+    background: #FFF;
+    border-color: #63B8FF;
+   
+}
+
+.CampoLeia{
+    width:110px;
+    height:60px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-top: -40px;
+      
+}
+
+.CampoLeia{
+    width:110px;
+    height:60px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-top: -40px;
+      
+}
+.CampoNao{
+    width:110px;
+    height:60px;
+    border: dotted 1px;;
+    text-align: center;
+    border-color: #63B8FF;
+    margin-top: -120px;
+    margin-left:170px;
+    
+}
+.CampoSim{
+    width:110px;
+    height:60px;
+    border: dotted 1px;;
+    text-align: center;
+    border-color: #63B8FF;
+    margin-top: -40px;
+    margin-left: -175px;
+    
+}
+.Condicao{
+    width:140px;
+    height:90px;
+    border: dotted 1px;;
+    text-align: center;
+    border-color: #63B8FF;
+    margin-top: -245px;
+    margin-left: -15px;
+    
+}
+.CampoEscreva1{
+   width:110px;
+    height:60px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-top: -245px;
+}
+.CampoFimDireita{
+    width:110px;
+    height:60px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: 175px;
+    margin-top: -25px;
+}
+
+.CampoFimEsquerda{
+    width:110px;
+    height:60px;
+    border: dotted 1px;
+    border-color: #63B8FF;
+    margin-left: -175px;
+    margin-top: -120px;
+    
+}
+
+.ExibeEsquerda{
+    width:110px;
+    height:60px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: -175px;
+    margin-top: -32px;
+}
+
+.ExibeDireita{
+    width:110px;
+    height:60px;
+    border: dotted 1px;;
+    border-color: #63B8FF;
+    text-align: center;
+    margin-left: 173px;
+    margin-top: -125px;
+}
+
+
+#InicioIMC{
+    width:100px;
+    height:60px;
+    float: left;
+    padding-bottom: 15px;
+}
+#Leia{
+    width:110px;
+    height:60px;
+    text-align: center;
+    
+    float:left;
+    padding-bottom: 15px;
+}
+#Leia2{
+    width:110px;
+    height:60px;
+    text-align: center;
+    float:left;
+    padding-bottom: 15px;
+    
+}
+#FimIMC{ 
+    width:110px;
+    height:60px;
+    text-align: center;
+    
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+#FimIMC2{ 
+    width:110px;
+    height:60px;
+    text-align: center;
+    float: left;
+    padding-bottom: 15px;
+}
+#LeiaAltura{
+    width:110px;
+    height:60px;
+     float: left;
+   
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+
+#ExibePesoIdeal{
+    width:110px;
+    height:60px;
+     float: left;
+    
+    padding-bottom: 15px;
+    
+}
+
+#ExibeForaPeso{
+    width:110px;
+    height:60px;
+    float: left;
+    
+    padding-right: 45px;
+    padding-bottom: 15px;
+}
+#CondicaoSetaEsquerda{
+    width:110px;
+    height:60px;
+    float: left;
+    
+    padding-right: 45px;
+    padding-bottom: 15px;
+     
+}
+
+#CondicaoSetaDireita{
+   width:110px;
+    height:60px;
+    float: left;
+   
+    
+}
+
+#ProcessaIMC{
+   width:110px;
+   height:60px;
+   float: left;
+   
+}
+#CondicaoIMC{
+   width:140px;
+   height:90px;
+   float: left;
+   padding-right: 45px;
+
+}
+
+#LeiaPeso{
+    width:110px;
+    height:60px;
+    float: left;
+    padding-right: 45px;
+    
+    
+}
+#InicioIMC{
+    width:110px;
+    height:60px;
+    
+}
+#Processa{
+    width:110px;
+    height:60px;
+    border-radius: 10px;
+    
+    
+}
