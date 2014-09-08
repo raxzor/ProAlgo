@@ -36,16 +36,16 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p>1� Passo: Escolha a Missões</p>   
+                <p><b>1º Passo:</b> Escolha a Missões</p>   
             </div>
 			<div class="col_2">
-                <p>2� Passo: Leia o enunciado da questão!</p>   
+                <p><b>2º Passo:</b> Leia o enunciado da questão!</p>   
             </div>
 			<div class="col_2">
-                <p>3� Passo: Arraste as figuras aos seus respectivos campos.</p>   
+                <p><b>3º Passo:</b> Arraste as figuras aos seus respectivos campos.</p>   
             </div>
 			<div class="col_2">
-                <h2>Vamos come�ar?</h2>
+                <h2><b>Vamos começar?</b></h2>
            </div>
             
             
@@ -65,11 +65,11 @@
             <div class="col_1">
     
                 <ul class="greybox">
-                    <li><a href="soma.html">Somar</a></li>
-                    <li><a href="media.html">Média Aritimética</a></li>
+                    <li><a href="Soma.jsp">Somar</a></li>
+                    <li><a href="MediaAritimetica.jsp">Média Aritimética</a></li>
                     <li><a href="maiorIdade.html">Maior Idade</a></li>
-                    <li><a href="imc.html">IMC</a></li>
-                    <li><a href="numeroPar.html">Números Pares</a></li>
+                    <li><a href="IMC.jsp">IMC</a></li>
+                    <li><a href="NumeroPar.jsp">Números Pares</a></li>
                 </ul>   
     
             </div>
@@ -77,26 +77,15 @@
             <div class="col_1">
     
                 <ul class="greybox">
-                    <li><a href="#">ThemeForest</a></li>
-                    <li><a href="#">GraphicRiver</a></li>
-                    <li><a href="#">ActiveDen</a></li>
-                    <li><a href="#">VideoHive</a></li>
-                    <li><a href="#">3DOcean</a></li>
+                    <li><a href="#">Raio de um Circulo</a></li>
+                    <li><a href="#">Converter Temperatura</a></li>
+                    <li><a href="#">Maior Número</a></li>
+                    <li><a href="#">Numeros Positivos</a></li>
+                    <li><a href="#">Numeros Crescentes</a></li>
                 </ul>   
     
             </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Logo</a></li>
-                    <li><a href="#">Flash</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">More...</a></li>
-                </ul>   
-    
-            </div>
+           
          </div><!-- End 3 columns container -->
         
     </li><!-- End 3 columns Item -->
@@ -109,22 +98,22 @@
         <div class="AreaInicialFiguras">
         
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="LeiaN1Soma" src="images/LeiaN1Soma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="LeiaN1Soma" title="Leia-1" name="null" src="images/LeiaN1Soma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="EscrevaSoma" src="images/EscrevaSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="EscrevaSoma" title="Escreva" name="null" src="images/EscrevaSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="IncioSoma" src="images/InicioSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="IncioSoma" title="Inicio" name="null" src="images/InicioSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="LeiaN2Soma" src="images/LeiaN2Soma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="LeiaN2Soma" title="Leia-2" name="null" src="images/LeiaN2Soma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>    
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="FimSoma" src="images/FIMSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="FimSoma" title="Fim" name="null" src="images/FIMSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>      
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="ProcessaSoma" src="images/ProcessaSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+            <img id="ProcessaSoma" title="Processo" name="null" src="images/ProcessaSoma.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>  
         </div>
 
@@ -153,7 +142,7 @@
                 <div class="CampoLeia" id="Fim" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
             </div>
         </div>
-        
+            <input TYPE="BUTTON" NAME="submit" value="Enviar" onclick="validarSoma()" >
         </div>
             
 <h3 id="app_status">�rea de Status do Aplicativo...</h3>

@@ -100,7 +100,7 @@ body{
 
 .AreaFinalFiguras{
     width:560px;
-    height:620px;
+    height:520px;
     background: #F8F8FF;
     margin-left: 40px;
     margin-top: 15px;
@@ -185,7 +185,7 @@ body{
     border: dotted 1px;;
     text-align: center;
     border-color: #63B8FF;
-    margin-top: -245px;
+    margin-top: -125px;
     margin-left: 0px;
     
 }
@@ -238,92 +238,91 @@ body{
 }
 
 
-#InicioIMC{
+#NumeroMod2{
     width:110px;
     height:60px;
     float: left;
-    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-bottom: 10px;
 }
 #Leia{
     width:110px;
     height:60px;
-    text-align: center;
-    border-radius: 10px;
+    
     float:left;
-    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-bottom: 10px;
 }
 #Leia2{
     width:110px;
     height:60px;
-    text-align: center;
     float:left;
-    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-bottom: 10px;
     
 }
-#FimIMC{ 
+#FimPar{ 
     width:110px;
     height:60px;
-    text-align: center;
-    border-radius: 10px;
     float: left;
-    padding-right: 40px;
-    padding-bottom: 15px;
+    padding-right: 45px;
+    padding-bottom: 10px;
 }
 #FimIMC2{ 
     width:110px;
     height:60px;
-    text-align: center;
+     padding-right: 45px;
+    padding-bottom: 10px;
     float: left;
-    padding-bottom: 15px;
+   
 }
-#LeiaAltura{
+#SetaSimPar{
     width:110px;
     height:60px;
-     float: left;
-    border-radius: 10px;
-    padding-right: 40px;
-    padding-bottom: 15px;
+    float: left;
+    padding-right: 35px;
+    padding-bottom: 10px;
 }
 
 #ExibePesoIdeal{
     width:110px;
     height:60px;
-     float: left;
-    border-radius: 10px;
-    padding-bottom: 15px;
-    
+    float: left;
+    padding-right: 35px;
+    padding-bottom: 10px;
 }
 
-#ExibeForaPeso{
+#InicioPar{
     width:110px;
     height:60px;
     float: left;
-    border-radius: 10px;
-    padding-right: 45px;
-    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-bottom: 10px;
 }
-#CondicaoSetaEsquerda{
+#LeiaNumero{
     width:110px;
     height:60px;
     float: left;
-    border-radius: 10px;
-    padding-right: 45px;
-    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-bottom: 10px;
      
 }
 
-#CondicaoSetaDireita{
-   width:110px;
+#ResultadoPar{
+    width:110px;
     height:60px;
     float: left;
-   
+    padding-right: 35px;
+    
     
 }
 
-#ProcessaIMC{
+#SetaNaoPar{
    width:110px;
    height:60px;
    float: left;
+   padding-right: 35px;
+   
    
 }
 #CondicaoIMC{
@@ -331,26 +330,33 @@ body{
    height:60px;
    float: left;
    padding-right: 45px;
+   
 
 }
 
-#LeiaPeso{
+#ResultadoImpar{
     width:110px;
     height:60px;
     float: left;
-    padding-right: 45px;
+   padding-right: 45px;
+   
     
     
 }
 #InicioIMC{
     width:110px;
     height:60px;
-    
+    padding-bottom: 15px;
+    float: left;
+    padding-right: 45px;
 }
 #Processa{
     width:110px;
     height:60px;
-    border-radius: 10px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    float: left;
+    
     
     
 }

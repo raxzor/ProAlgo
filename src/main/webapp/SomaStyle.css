@@ -140,18 +140,33 @@ body{
 #FimSoma{ 
     width:110px;
     height:60px;
-    text-align: center;
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 15px;
     
+}
+
+#IncioSoma{
+    width:110px;
+    height:60px;
     float: left;
     padding-right: 40px;
     padding-bottom: 15px;
 }
 
+#ProcessaSoma{ 
+    width:110px;
+    height:60px;
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    
+    
+}
 #LeiaN1Soma{
     width:110px;
     height:60px;
     float: left;
-  
     padding-right: 40px;
     padding-bottom: 15px;
 }
@@ -160,25 +175,22 @@ body{
     width:110px;
     height:60px;
     float: left;
-    
+    padding-right: 40px;
     padding-bottom: 15px;
-    
 }
 
 #FimMedia{
     width:110px;
     height:60px;
-    float: left;
-   
-    padding-right: 45px;
+    float:left;
+    padding-right: 40px;
     padding-bottom: 15px;
 }
 #LeiaN2{
     width:110px;
     height:60px;
     float: left;
-    
-    padding-right: 45px;
+    padding-right: 40px;
     padding-bottom: 15px;
      
 }
@@ -186,7 +198,8 @@ body{
 #ResultadoMedia{
     width:110px;
     height:60px;
-    float: left;
+    float:left;
+    padding-right: 40px;
     padding-bottom: 15px;
     
 }

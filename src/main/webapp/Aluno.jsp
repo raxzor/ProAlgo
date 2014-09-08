@@ -36,16 +36,16 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p>1º Passo: Escolha a Missões</p>   
+                <p><b>1º Passo:</b> Escolha a Missões</p>   
             </div>
 			<div class="col_2">
-                <p>2º Passo: Leia o enunciado da questão!</p>   
+                <p><b>2º Passo:</b> Leia o enunciado da questão!</p>   
             </div>
 			<div class="col_2">
-                <p>3º Passo: Arraste as figuras aos seus respectivos campos.</p>   
+                <p><b>3º Passo:</b> Arraste as figuras aos seus respectivos campos.</p>   
             </div>
 			<div class="col_2">
-                <h2>Vamos começar?</h2>
+                <h2><b>Vamos começar?</b></h2>
            </div>
             
             
@@ -69,7 +69,7 @@
                     <li><a href="MediaAritimetica.jsp">Média Aritimética</a></li>
                     <li><a href="maiorIdade.html">Maior Idade</a></li>
                     <li><a href="IMC.jsp">IMC</a></li>
-                    <li><a href="numeroPar.html">Números Pares</a></li>
+                    <li><a href="NumeroPar.jsp">Números Pares</a></li>
                 </ul>   
     
             </div>

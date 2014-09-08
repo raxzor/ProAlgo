@@ -36,16 +36,16 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p>1� Passo: Escolha a Missões</p>   
+                <p><b>1º Passo:</b> Escolha a Missões</p>   
             </div>
 			<div class="col_2">
-                <p>2� Passo: Leia o enunciado da questão!</p>   
+                <p><b>2º Passo:</b> Leia o enunciado da questão!</p>   
             </div>
 			<div class="col_2">
-                <p>3� Passo: Arraste as figuras aos seus respectivos campos.</p>   
+                <p><b>3º Passo:</b> Arraste as figuras aos seus respectivos campos.</p>   
             </div>
 			<div class="col_2">
-                <h2>Vamos come�ar?</h2>
+                <h2><b>Vamos começar?</b></h2>
            </div>
             
             
@@ -65,11 +65,11 @@
             <div class="col_1">
     
                 <ul class="greybox">
-                    <li><a href="soma.html">Somar</a></li>
-                    <li><a href="media.html">Média Aritimética</a></li>
+                    <li><a href="Soma.jsp">Somar</a></li>
+                    <li><a href="MediaAritimetica.jsp">Média Aritimética</a></li>
                     <li><a href="maiorIdade.html">Maior Idade</a></li>
-                    <li><a href="imc.html">IMC</a></li>
-                    <li><a href="numeroPar.html">Números Pares</a></li>
+                    <li><a href="IMC.jsp">IMC</a></li>
+                    <li><a href="NumeroPar.jsp">Números Pares</a></li>
                 </ul>   
     
             </div>
@@ -77,23 +77,11 @@
             <div class="col_1">
     
                 <ul class="greybox">
-                    <li><a href="#">ThemeForest</a></li>
-                    <li><a href="#">GraphicRiver</a></li>
-                    <li><a href="#">ActiveDen</a></li>
-                    <li><a href="#">VideoHive</a></li>
-                    <li><a href="#">3DOcean</a></li>
-                </ul>   
-    
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Logo</a></li>
-                    <li><a href="#">Flash</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">More...</a></li>
+                    <li><a href="#">Raio de um Circulo</a></li>
+                    <li><a href="#">Converter Temperatura</a></li>
+                    <li><a href="#">Maior Número</a></li>
+                    <li><a href="#">Numeros Positivos</a></li>
+                    <li><a href="#">Numeros Crescentes</a></li>
                 </ul>   
     
             </div>
@@ -109,101 +97,93 @@
         
         
 	<div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="FimIMC" src="images/FimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="FimPar" title="Fim-Par" name="null" src="images/FimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
                     
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-            <img id="InicioIMC" src="images/CondicaoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+            <img id="NumeroMod2" title="Condicao" name="null" src="images/NumeroMod2.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
         
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img  id="LeiaAltura" src="images/SetaSimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img  id="SetaSimPar" title="Seta-Sim" name="null" src="images/SetaSimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div>
         
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img id="ExibeForaPeso" src="images/InicioPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img id="InicioPar" title="Inicio-Par" name="null" src="images/InicioPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div>
         
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img id="ExibeForaPeso" src="images/LeiaN2.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	</div>
             
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img id="ProcessaIMC" src="images/ResultadoDivisaoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	</div>
-         
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img  id="CondicaoSetaEsquerda" src="images/LeiaN1.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img  id="LeiaNumero" title="Leia-Numero" name="null" src="images/LeiaNumero.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div> 
             
         
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img id="CondicaoSetaDireita" src="images/ResultadoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img id="ResultadoPar" title="Resultado-Par" name="null" src="images/ResultadoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div>
             
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img id="ProcessaIMC" src="images/SetaNaoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img id="SetaNaoPar" title="Seta-Nao" name="null" src="images/SetaNaoPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div>
             
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <img  id="LeiaPeso" src="images/ResultadoImpar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+        <img  id="ResultadoImpar" title="Resultado-Impar" name="null" src="images/ResultadoImpar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
 	</div>
         
         <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	    <img id="ProcessaIMC" src="images/FimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+	    <img id="FimImpar" title="Fim-Impar" name="null"  src="images/FimPar.png" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
         </div>
         </div>
 
 
+            <!--Chegada Figuras-->
         <div class="AreaFinalFiguras">
             <div class="AreaCentralChegada">
-                <div class="CampoInicio" id="Inicio" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false"  ondragleave="drag_leave(event)"></div>
+                <div class="CampoInicio" id="Inicio-Par" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false"  ondragleave="drag_leave(event)">
+                </div>
             </div>
             
             <div class="AreaCentralChegada">
-                <div class="CampoLeia" id="Leia-Altura" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
+                <div class="CampoLeia" id="Leia-Numero" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
+            </div>
+           
+            <div class="AreaCentralChegada">
+                <div class="CampoSim" id="Seta-Sim" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
             </div>
             
             <div class="AreaCentralChegada">
-                <div class="CampoLeia" id="Leia-Peso" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+                <div class="CampoNao" id="Seta-Nao" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
             </div>
             
             <div class="AreaCentralChegada">
-                <div class="CampoLeia" id="Processo" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoSim" id="Sim" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoNao" id="Nao" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoProcessa" id="Nao" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="Condicao" id="Condicao" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
+                <div class="Condicao" id="Condicao" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" >
+                </div>
              </div>
             
             <div class="AreaCentralChegada">
-                <div class="ExibeEsquerda" id="Acima-Peso" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+                <div class="ExibeEsquerda" id="Resultado-Par" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
             </div>
             
             <div class="AreaCentralChegada">
-                <div class="ExibeDireita" id="Peso-ideal" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+                <div class="ExibeDireita" id="Resultado-Impar" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
             </div>
             
              <div class="AreaCentralChegada">   
-                <div class="CampoFimDireita" id="Fim-1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+                <div class="CampoFimDireita" id="Fim-Impar" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
              </div>
             
             <div class="AreaCentralChegada">   
-                <div class="CampoFimEsquerda" id="Fim-2" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+                <div class="CampoFimEsquerda" id="Fim-Par" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                </div>
              </div>
         </div>
+        <input TYPE="BUTTON" NAME="submit" value="Enviar" onclick="validarNumeroPar()" >
         </div>
             
 <h3 id="app_status">�rea de Status do Aplicativo...</h3>
