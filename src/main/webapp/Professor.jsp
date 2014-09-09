@@ -19,7 +19,7 @@
         <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
         <li><a href="ListarAlunosPorNome.jsp">Editar Aluno</a></li>
         <li><a href="ListarAlunosPorNome.jsp">Deletar Aluno</a></li>
-        <li><a href="CadastrarAluno.jsp">Estatísticas do Aluno</a></li>
+        <li><a href="EstatisticasAluno.jsp">Estatísticas do Aluno</a></li>
         
     </li>
 

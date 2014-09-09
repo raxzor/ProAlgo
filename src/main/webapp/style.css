@@ -39,6 +39,14 @@ input.submit{
     margin-left: -35px;
     
 }
+
+.tabelaListarEstatisticas{
+    width: 859px;
+    height: 300px;
+    margin-left: 15px;
+    
+}
+
 .descricaoProblema{
     width:350px;
     height:120px;
