@@ -31,7 +31,7 @@ public class Controler extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Integer acao = new Integer(request.getParameter("action"));
-        String nextPage = "index.jsp";
+        String nextPage = "Inicio.jsp";
         System.out.println("ACTION = " + acao);
         if(request.getSession().getAttribute("usuario") == null){
             if(acao == 10){

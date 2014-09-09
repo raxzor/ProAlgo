@@ -8,6 +8,14 @@ body{
     margin-top: 20px;
   
 }
+
+.logomarca{
+    width: 150px;
+    height: 150px;
+    margin-left: 190px;
+    margin-bottom:-15px;
+    margin-top: 19px;
+}
 .titulos{
     width: 350px;
     height: 60px;
@@ -31,13 +39,6 @@ body{
 	
 }
 
-.logomarca{
-    width: 150px;
-    height: 150px;
-    margin-left: 180px;
-    margin-bottom:-55px;
-    margin-top: 19px;
-}
 
 .AreaCentralChegada{
     width:180px;

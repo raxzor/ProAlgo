@@ -11,7 +11,20 @@
         <title>JSP Page</title>
     </head>
     <body>
-<div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
+<div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+<div id="validacao">
+        <form action="Controler" method="post">
+            <input type="hidden" name="action" value="10">
+            <div id="login">
+                Login: <input style="width: 100px; border-radius: 6px;" type="text" name="login" required="true" >
+            </div>
+            <div id="senha">
+            Senha: <input style="width: 100px; border-radius: 6px;"  type="password" name="senha" required="true">
+            <input type="submit" name="submit" value="Entrar">
+            </div>
+        </form>
+    </div>
+
 <ul id="menu">
      <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
@@ -90,7 +103,7 @@
          </div><!-- End 3 columns container -->
         
     </li><!-- End 3 columns Item -->
-    <li class="menu_right"><form action="Controler" method="post"><input type="submit" value="Sair"> <input type="hidden" name="action" value="9"></form><!-- Inicio item Sobre -->
+     <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
         <div class="AreaGeral">
@@ -105,12 +118,6 @@
             </p>   
 
         </div>
-            
-
-       
-       
-        
-        
-        
+   
 </body>
 </html>

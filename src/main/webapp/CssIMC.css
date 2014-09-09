@@ -8,6 +8,22 @@ body{
     margin-top: 20px;
   
 }
+
+.logomarca{
+    width: 150px;
+    height: 150px;
+    margin-left: 190px;
+    margin-bottom:-15px;
+    margin-top: 19px;
+    }
+
+#Button{
+    margin-left: 240px;
+    margin-top: -25px;
+    position: relative;
+}
+
+
 .titulos{
     width: 350px;
     height: 60px;
@@ -56,13 +72,6 @@ body{
 	
 }
 
-.logomarca{
-    width: 150px;
-    height: 150px;
-    margin-left: 180px;
-    margin-bottom:-55px;
-    margin-top: 19px;
-}
 
 .AreaCentralChegada{
     width:180px;
@@ -100,7 +109,7 @@ body{
 
 .AreaFinalFiguras{
     width:560px;
-    height:620px;
+    height:650px;
     background: #F8F8FF;
     margin-left: 40px;
     margin-top: 15px;
@@ -274,7 +283,7 @@ body{
     height:60px;
     text-align: center;
     float: left;
-    padding-bottom: 15px;
+    
 }
 #LeiaAltura{
     width:110px;

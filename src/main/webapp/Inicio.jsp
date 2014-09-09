@@ -11,7 +11,19 @@
         <title>JSP Page</title>
     </head>
     <body>
-<div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
+<div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+    <div id="validacao">
+        <form action="Controler" method="post">
+            <input type="hidden" name="action" value="10">
+            <div id="login">
+                Login: <input style="width: 100px; border-radius: 6px;" type="text" name="login" required="true" >
+            </div>
+            <div id="senha">
+            Senha: <input style="width: 100px; border-radius: 6px;"  type="password" name="senha" required="true">
+            <input type="submit" name="submit" value="Entrar">
+            </div>
+        </form>
+    </div>
 <ul id="menu">
      <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
@@ -25,7 +37,7 @@
             </div>
     
             <div class="col_2">
-                <p>O Projeto Algo+ foi desenvolvido por uma aluno do curso de Análise e Desenvolvimento de Sistemas do Insituto Federal de Educação, Ciência e Tecnologia da Paraíba, com o propósito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos através do uso de fluxogramas.</p>   
+                <p >O Projeto Algo+ foi desenvolvido por uma aluno do curso de Análise e Desenvolvimento de Sistemas do Insituto Federal de Educação, Ciência e Tecnologia da Paraíba, com o propósito de auxiliar o processo de ensino-aprendizagem da disciplina de algoritmos através do uso de fluxogramas.</p>   
            </div>
 	</div><!-- Fim do container Sobre -->
     
@@ -36,16 +48,16 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p>1º Passo: Escolha a Missões</p>   
+                <p><b>1º Passo:</b> Escolha a Missões</p>   
             </div>
 			<div class="col_2">
-                <p>2º Passo: Leia o enunciado da questão!</p>   
+                <p><b>2º Passo:</b> Leia o enunciado da questão!</p>   
             </div>
 			<div class="col_2">
-                <p>3º Passo: Arraste as figuras aos seus respectivos campos.</p>   
+                <p><b>3º Passo:</b> Arraste as figuras aos seus respectivos campos.</p>   
             </div>
 			<div class="col_2">
-                <h2>Vamos começar?</h2>
+                <h2><b>Faça seu Login!</b></h2>
            </div>
             
             
@@ -54,124 +66,24 @@
     
     </li><!-- Fim item Sobre -->
 	
-	<li><a href="#" class="drop">Missões</a><!-- Begin 3 columns Item -->
-    
-        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
-            
-            <div class="col_3">
-                <h2>Lista de Missões</h2>
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="soma.html">Somar</a></li>
-                    <li><a href="media.html">Média Aritim�tica</a></li>
-                    <li><a href="maiorIdade.html">Maior Idade</a></li>
-                    <li><a href="imc.html">IMC</a></li>
-                    <li><a href="numeroPar.html">Números Pares</a></li>
-                </ul>   
-    
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">ThemeForest</a></li>
-                    <li><a href="#">GraphicRiver</a></li>
-                    <li><a href="#">ActiveDen</a></li>
-                    <li><a href="#">VideoHive</a></li>
-                    <li><a href="#">3DOcean</a></li>
-                </ul>   
-    
-            </div>
-            
-            <div class="col_1">
-    
-                <ul class="greybox">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Logo</a></li>
-                    <li><a href="#">Flash</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">More...</a></li>
-                </ul>   
-    
-            </div>
-         </div><!-- End 3 columns container -->
-        
-    </li><!-- End 3 columns Item -->
-    <li class="menu_right"><a href="index.html">Sair</a><!-- Inicio item Sobre -->
+	
+   
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
         <div class="AreaGeral">
-        <div class="AreaInicialFiguras">
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	<div id="Inicio" draggable="true"  ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Inicio
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-	<div id="Leia" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Leia
-	</div>
-        </div>
-        
-	<div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Leia2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Leia
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Processa" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Processa
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Escreva" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
-	Escreva
-	</div>
-        </div>
-        
-        <div class="AreaCentralSaida" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" >
-        <div id="Fim" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"  >
-	Fim
-	</div>
-        </div>
-        </div>
+        <div class="AreaFinalFigurasAluno">
+            <h2 class="TituloProAlgo">ProAlgo+</h2>
+            <p class="textoInicial">O Projeto ProAlgo+ foi desenvolvido por uma aluno do curso de Análise e
+             Desenvolvimento de Sistemas do Insituto Federal de Educação, Ciência
+             e Tecnologia da Paraíba, com o propósito de auxiliar o processo de
+             ensino-aprendizagem da disciplina de algoritmos através do uso de fluxogramas.
+             A ferramenta oferece ao usuário um ambiente de resolução de problemas algorítmicos simples e intuitivo,
+             que irá auxiliá-lo a resolver os problemas com objetividade, bem como simplificará o entendimento acerca desse conteúdo.
+            </p>   
 
-        <div class="AreaFinalFiguras">
-            <div class="AreaCentralChegada">
-                <div class="CampoInicio" id="Inicio1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false"  ondragleave="drag_leave(event)"></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoLeia" id="Leia1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoLeia" id="Gilmar" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoProcessa" id="Processa1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-            </div>
-            
-            <div class="AreaCentralChegada">
-                <div class="CampoEscreva" id="Escreva1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-             </div>
-            
-            <div class="AreaCentralChegada">   
-                <div class="CampoFim" id="Fim1" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-            </div>
-        </div>
-        
         </div>
             
-<h3 id="app_status">�rea de Status do Aplicativo...</h3>
+
        
        
         

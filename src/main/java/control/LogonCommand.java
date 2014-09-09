@@ -41,7 +41,7 @@ public class LogonCommand implements Icommand{
             request.getSession().setAttribute("usuario", u);
             return url;
         }else{
-            return "index.jsp";
+            return "Inicio.jsp";
         }
     }
     

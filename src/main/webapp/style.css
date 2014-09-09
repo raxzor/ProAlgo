@@ -1,3 +1,8 @@
+input.submit{
+    background: #63B8FF;
+}
+
+
 .descricaoProblema{
     width:350px;
     height:120px;
@@ -32,6 +37,19 @@ body{
     height: 700px;
     background: #C6E2FF;
 }
+
+
+#login{
+    width: 250px;
+    margin-left: 750px;
+}
+
+#senha{
+    width: 250px;
+    margin-left: 910px;
+    margin-top: -25px;
+    
+}
 .AreaCentralSaida{
     margin-left: 45px;
     margin-top: 20px;
@@ -63,8 +81,8 @@ body{
 .logomarca{
     width: 150px;
     height: 150px;
-    margin-left: 180px;
-    margin-bottom:-55px;
+    margin-left: 190px;
+    margin-bottom:-15px;
     margin-top: 19px;
 }
 

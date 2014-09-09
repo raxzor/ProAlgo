@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
+        <div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
         <ul id="menu">
             <li><a href="index.jsp">Página Inicial</a>
             <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>

@@ -11,7 +11,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <div class="logomarca"><img src="images/kid42.png" alt="Smiley face" height="100" width="100"></div>
+        <div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
         <ul id="menu">
             <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->
             </li><!-- Fim item P�gina Inicial -->
@@ -88,7 +88,7 @@
                 </div><!-- End 3 columns container -->
 
             </li><!-- End 3 columns Item -->
-            <li class="menu_right"><form action="Controler" method="post"><input type="submit" value="Sair"> <input type="hidden" name="action" value="9"></form><!-- Inicio item Sobre -->
+             <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
             </li><!-- Fim item P�gina Inicial -->
         </ul>
         <div class="descricaoProblema"><h3 class="textoInicial">Calcule o Indice de Massa Corpórea de uma pessoa e afirme se o seu IMC está saudável. O problema terá como parâmetros o Peso e a Altura de um indivíduo. Boa Sorte!</h3></div>
@@ -210,15 +210,13 @@
                     <div class="CampoFimEsquerda" id="Fim-IMC" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
                     </div>
                 </div>
-            </div>
+            <div id="Button">
             <input TYPE="BUTTON" NAME="submit" value="Enviar" onclick="validarIMC()" >
+            </div>
+            </div>
+            
         </div>
 
-       
-
-
-
-
-
+    
     </body>
 </html>
