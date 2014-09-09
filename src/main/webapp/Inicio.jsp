@@ -48,16 +48,14 @@
         <div class="dropdown_2columns"><!-- Inicio do container Sobre -->
     
             <div class="col_2">
-                <p><b>1º Passo:</b> Escolha a Missões</p>   
+                <p><b>1º Passo:</b> Crie uma Conta</p>   
             </div>
 			<div class="col_2">
-                <p><b>2º Passo:</b> Leia o enunciado da questão!</p>   
+                <p><b>2º Passo:</b> Faça seu Login</p>   
             </div>
-			<div class="col_2">
-                <p><b>3º Passo:</b> Arraste as figuras aos seus respectivos campos.</p>   
-            </div>
-			<div class="col_2">
-                <h2><b>Faça seu Login!</b></h2>
+		
+            <div class="col_2">
+                <h2><b>Vamos Começar?</b></h2>
            </div>
             
             
@@ -80,9 +78,10 @@
              A ferramenta oferece ao usuário um ambiente de resolução de problemas algorítmicos simples e intuitivo,
              que irá auxiliá-lo a resolver os problemas com objetividade, bem como simplificará o entendimento acerca desse conteúdo.
             </p>   
-
+           
         </div>
             
+           <div class="rodapeInicio">Desenvolvido por Gilmar Moreira. Todos os direitos reservados.</div> 
 
        
        

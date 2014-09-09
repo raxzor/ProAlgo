@@ -16,9 +16,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-<div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+<div class="logomarcaCadastrarAluno"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
 <ul id="menu">
-     <li><a href="index.jsp">Página Inicial</a><!-- Inicio item Sobre -->
+     <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	
 	
         <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
@@ -29,35 +29,41 @@
     </li>
 	
   
-    <li class="menu_right"><a href="index.jsp">Sair</a><!-- Inicio item Sobre -->
+    <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
         <div class="AreaGeral">
        
         <div class="AreaFinalFigurasProfessor">
             <div class="camposForm">
-			<h2 class="titulos">Cadastrar novo Aluno <b>${usuario.nome}</b></h2>
-                        <c:if test="${isNew ne null}">
-                            <b>kkkkkkkkkkKKKKKKKKKKKKKKKKKKKKKKKK</b>
-                        </c:if>
+			<h2 class="titulos">Cadastrar novo Aluno</h2>
+                        <p style="margin-left: 370px; margin-top: -40px;"><b>${usuario.nome}</b></p>
+                        <div class="tabelaForm">
+                        <div class="formCadastroAluno1">
+                            
                         <form action="Controler" method="post">
                             <input type="hidden" name="action" value="3">
-                        Nome:  <input type="text" name="nome" value="${aluno.nome}"> </br>
-                        Login: <input type="text" name="login" value="${aluno.login}"> </br>
-                        Senha: <input type="text" name="senha"  value="${aluno.senha}">  </br>
-                        Instituição: <input type="text" name="instituicao"  value="${aluno.instituicao}"> </br>
-                        Tipo de Deficiência <input type="text" name="tipoDeficiencia"  value="${aluno.tipoDeficiencia}"></br>
-                        Curso: <input type="text" name="curso"  value="${aluno.curso}"> 
-                        Turma: <input type="text" name="turma"  value="${aluno.turma}"> </br>
+                            Nome: <br> <input  type="text" name="nome" value="${aluno.nome}"> <br>
+                        Login: <br><input type="text" name="login" value="${aluno.login}"> <br>
+                        Senha: <br><input type="password" name="senha"  value="${aluno.senha}">  <br>
+                        Instituição:<br> <input type="text" name="instituicao"  value="${aluno.instituicao}"> <br>
+                        </div>
+                        <div class="formCadastroAluno2">
+                        
+                        Tipo de Deficiência<br> <input type="text" name="tipoDeficiencia"  value="${aluno.tipoDeficiencia}"><br>
+                        Curso:<br> <input type="text" name="curso"  value="${aluno.curso}"> <br>
+                        Turma:<br> <input type="text" name="turma"  value="${aluno.turma}"> <br><br>
                         <c:choose>
                             <c:when test="${aluno.id eq null}">
-                                <input type="submit" value="cadastrar">
+                                <input style="margin-left: 150px; margin-top: 55px;" type="submit" value="cadastrar">
                             </c:when>
                             <c:otherwise>
                                 <input type="submit" value="Alterar">
                             </c:otherwise>
                         </c:choose>
                         </form>
+                        </div>
+                        </div>
 			</div>
         </div>
             

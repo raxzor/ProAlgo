@@ -11,14 +11,14 @@
     </head>
 
     <body>
-        <div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+        <div class="logomarcaListarAluno"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
         <ul id="menu">
-            <li><a href="index.jsp">Página Inicial</a>
+            <li><a href="Inicio.jsp">Página Inicial</a>
             <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
             <li><a href="ListarAlunosPorNome.jsp">Editar Aluno</a></li>
             <li><a href="ListarAlunosPorNome.jsp">Deletar Aluno</a></li>
             <li><a href="CadastrarAluno.jsp">Estatísticas do Aluno</a></li>
-            <li class="menu_right"><a href="index.jsp">Sair</a><!-- Inicio item Sobre -->
+            <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
             </li><!-- Fim item P�gina Inicial -->
         </li>
     </ul>
@@ -27,27 +27,27 @@
         <div class="AreaFinalFigurasProfessor">
             <div class="camposTable">
                 <h2 class="titulos"> Lista de Alunos </h2>
+                <p style="margin-left: 330px; margin-top: -40px; width: 150px;"><b>${usuario.nome}</b></p>
+                <div class="tabelaListar">
                 <form name ="lista de alunos" action="Controler" method="post">
                     <input type="hidden" name="action" value="4"/>
-                    Nome:  <input name="nome" type="text">
+                    Nome:  <input style="margin-top: 40px;" name="nome" type="text">
                     <input type="submit" value="Confirmar">
                 </form>
-                <table border="1px" >
-                    <tr>
-                        <td style="min-width:100px" align="center">Nome</td>
-                        <td style="min-width:100px" align="center">Login</td> 
-                        <td style="min-width:100px" align="center">Senha</td>
-                        <td style="min-width:100px" align="center">Instituição</td>
+                    <table border="1px" style="margin-top: 30px; color: #0272a7; " >
+                    <tr style="background: #BBBBBB; color: #FFFFFF; font: bolder;">
+                        <td style="min-width:250px" align="center">Nome</td>
+                        <td style="min-width:110px" align="center">Instituição</td>
                         <td style="min-width:100px" align="center">Curso</td>
-                        <td style="min-width:100px" align="center">Tipo de Deficiência</td>
+                        <td style="min-width:150px" align="center">Tipo de Deficiência</td>
                         <td style="min-width:100px" align="center">Turma</td>
+                        <td style="min-width:50px" align="center">Editar</td>
+                        <td style="min-width:50px" align="center">Deletar</td>
                     </tr>
 
                     <c:forEach items="${aluno}" var="alunos">
                         <tr>
                             <td style="min-width:50px" align="center">${alunos.nome}</td>
-                            <td style="min-width:50px" align="center">${alunos.login}</td> 
-                            <td style="min-width:50px" align="center">${alunos.senha}</td>
                             <td style="min-width:50px" align="center">${alunos.instituicao}</td>
                             <td style="min-width:50px" align="center">${alunos.curso}</td>
                             <td style="min-width:50px" align="center">${alunos.tipoDeficiencia}</td>

@@ -11,7 +11,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-<div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+<div class="logomarcaProfessor"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
 <ul id="menu">
      <li><a href="index.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->

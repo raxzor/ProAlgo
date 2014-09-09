@@ -2,7 +2,43 @@ input.submit{
     background: #63B8FF;
 }
 
+.formCadastroAluno1{
+    width: 600px;
+    height: 400px;
+    margin-left: 60px;
+    float: left;
+    margin-top: 35px;
+    font-weight: bold;
+    color: #666666;
+    
+}
+.formCadastroAluno2{
+    width: 350px;
+    height: 400px;
+    margin-left: 330px;
+    float: left;
+    margin-top: -400px;
+    font-weight: bold;
+    color: #666666;
+}
 
+.tabelaForm{
+    width: 600px;
+    height: 300px;
+    border: solid 1px;
+    border-radius:9px;
+    margin-left: 130px;
+    border-color: #888888;
+    
+    
+}
+
+.tabelaListar{
+    width: 859px;
+    height: 300px;
+    margin-left: -35px;
+    
+}
 .descricaoProblema{
     width:350px;
     height:120px;
@@ -56,14 +92,16 @@ body{
   
 }
 .titulos{
-    width: 350px;
+    width: 370px;
     height: 60px;
-    margin-left: 165px;
+    margin-left: 295px;
     margin-top: 80px;
+    font-weight: bold;
+    color: #666666;
 	
 }
 .camposForm{
-	width:70px;
+	width:700px;
 	height:250px;
 	margin-left:45px;
 	margin-top:20px;
@@ -80,7 +118,30 @@ body{
 
 .logomarca{
     width: 150px;
-    height: 150px;
+    height: 125px;
+    margin-left: 190px;
+    margin-bottom:-15px;
+    margin-top: 19px;
+}
+.logomarcaProfessor{
+    width: 150px;
+    height: 145px;
+    margin-left: 190px;
+    margin-bottom:-15px;
+    margin-top: 19px;
+}
+
+.logomarcaCadastrarAluno{
+    width: 150px;
+    height: 145px;
+    margin-left: 190px;
+    margin-bottom:-15px;
+    margin-top: 19px;
+}
+
+.logomarcaListarAluno{
+    width: 150px;
+    height: 145px;
     margin-left: 190px;
     margin-bottom:-15px;
     margin-top: 19px;
@@ -102,8 +163,16 @@ body{
     border-radius: 15px;
     margin-left: 150px;
     margin-bottom: 30px;
+    color: #666666;
     
 
+}
+
+.rodapeInicio{
+    width: 450px;
+    height: 50px;
+    margin-left: 280px;
+    
 }
 
 .AreaInicialFiguras{
@@ -154,7 +223,7 @@ body{
 
 .AreaFinalFigurasProfessor{
     width:980px;
-    height:520px;
+    height:700px;
     background: #F8F8FF;
     margin-left: 10px;
     margin-top: 40px;
@@ -165,6 +234,7 @@ body{
     -moz-box-shadow:inset 0px 0px 1px #F8F8FF;
     -webkit-box-shadow:inset 0px 10px 10px #F8F8FF;
     box-shadow:inset 0px 0px 15px #3299CC;
+    margin-bottom: 50px;
 
 }
 
