@@ -8,6 +8,7 @@
         <script language="javascript" src="DragAndDrop.js"></script>
         <link rel="stylesheet" type="text/css" href="SomaStyle.css">
         <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+        <script src="prototype.js"></script>
         <title>JSP Page</title>
     </head>
     <body>

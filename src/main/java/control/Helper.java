@@ -27,7 +27,8 @@ public class Helper {
 //        commands.put(8, new EditarAlunoCommand());
         commands.put(9, new LogoutCommand());
         commands.put(10, new LogonCommand());
-        
+        commands.put(11, new SalvarEstatisticasCommand());
+        commands.put(12, new ListarEstatisticasCommand());
     }
     
     public static Helper getInstance(){

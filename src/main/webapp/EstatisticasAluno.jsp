@@ -26,15 +26,10 @@
         
         <div class="AreaFinalFigurasProfessor">
             <div class="camposTable">
-                <h2 class="titulos"> Estatisticas do Aluno</h2>
+                <h2 class="titulos"> Estatísticas dos Alunos</h2>
                 <p style="margin-left: 330px; margin-top: -40px; width: 150px;"></p><br>
                 <div class="tabelaListarEstatisticas">
-                <form name ="lista de alunos" action="Controler" method="post">
-                    <input type="hidden" name="action" value="4"/>
-                    Nome:  <input style="margin-top: 40px;" name="nome" type="text">
-                    <input type="submit" value="Confirmar"><br>
-                </form>
-                    <table border="1px" style="margin-top: 30px; color: #0272a7; " >
+                   <table border="1px" style="margin-top: 30px; color: #0272a7; " >
                     <tr style="background: #BBBBBB; color: #FFFFFF; font: bolder;">
                         <td style="min-width:250px" align="center">Aluno</td>
                         <td style="min-width:110px" align="center">Data</td>
@@ -43,18 +38,11 @@
                         <td style="min-width:100px" align="center">Falhou</td>
                     </tr>
                     <tr>
-                        <td style="min-width:50px" align="center">Lucimário Queiroga</td>
-                        <td style="min-width:50px" align="center">05/08/2014</td>
-                        <td style="min-width:50px" align="center">Soma</td>
-                        <td style="min-width:50px" align="center">2</td>
-                        <td style="min-width:50px" align="center">4</td>
-                    </tr>
-                    <tr>
-                        <td style="min-width:50px" align="center">Lucimário Queiroga</td>
-                        <td style="min-width:50px" align="center">05/08/2014</td>
-                        <td style="min-width:50px" align="center">IMC</td>
-                        <td style="min-width:50px" align="center">3</td>
-                        <td style="min-width:50px" align="center">6</td>
+                        <td style="min-width:50px" align="center">${estatisticas.aluno.nome}</td>
+                        <td style="min-width:50px" align="center">${estatisticas.data}</td>
+                        <td style="min-width:50px" align="center">${estatisticas.fluxograma}</td>
+                        <td style="min-width:50px" align="center">${estatisticas.}</td>
+                        <td style="min-width:50px" align="center">${}</td>
                     </tr>
                     
                 </table>

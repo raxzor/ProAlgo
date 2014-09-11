@@ -39,6 +39,11 @@ public class Aluno extends Usuario{
         this.TipoDeficiencia = TipoDeficiencia;
     }
 
+    @Override
+    public String toString() {
+        return "Aluno{" + "TipoDeficiencia=" + TipoDeficiencia + ", id=" + id + ", turma=" + turma + ", professor=" + professor + '}';
+    }
+
     
     
 }
