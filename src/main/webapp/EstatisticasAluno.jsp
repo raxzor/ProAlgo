@@ -41,8 +41,8 @@
                         <td style="min-width:50px" align="center">${estatisticas.aluno.nome}</td>
                         <td style="min-width:50px" align="center">${estatisticas.data}</td>
                         <td style="min-width:50px" align="center">${estatisticas.fluxograma}</td>
-                        <td style="min-width:50px" align="center">${estatisticas.}</td>
-                        <td style="min-width:50px" align="center">${}</td>
+                        <td style="min-width:50px" align="center"></td>
+                        <td style="min-width:50px" align="center"></td>
                     </tr>
                     
                 </table>

@@ -52,10 +52,11 @@ function drag_end(e){
     }
 }
         
-function ajaxRequest(resultado, validador) {  
+function ajaxRequest(resultado, validador) {
+//    alert("Deu Certo");
     document.location.href='http://localhost:8080/ProAlgo/Controler?action=11&result='+resultado+'&algoritmo='+validador;
 }  
-        
+         
 function validarSoma(){
             
     //                    alert("Graças a Deus");
@@ -95,6 +96,10 @@ function validarSoma(){
     validador = "Soma";
     var x = ajaxRequest(validacao, validador);
 //              
+}
+function ajaxRequest2(resultado, validador) {
+//    alert("Deu Certo");
+    document.location.href='http://localhost:8080/ProAlgo/Controler?action=11&result='+resultado+'&algoritmo='+validador;
 }
 function validarIMC(){
             
@@ -150,7 +155,12 @@ function validarIMC(){
     //            appStatus("Validacao = " + validacao)
     if(validacao == true){
         alert("Parabéns, Algoritmo resolvido com sucesso!");
-    }
+    }else{
+        alert("Falha!");
+      }
+    validador = "IMC";
+    alert(validacao);
+    var xx = ajaxRequest(validacao, validador);
 //                appStatus("Esperado = " + o.title + " Local = " + o.name);
 //                if(o.title == o.name){
 //                    alert("Graças a Deus");
@@ -212,7 +222,11 @@ function validarNumeroPar(){
     //            appStatus("Validacao = " + validacao)
     if(validacao == true){
         alert("Parabéns, Algoritmo resolvido com sucesso!");
-    }
+    }else{
+        alert("Falha!");
+      }
+    validador = "NumeroParImpar";
+    var xxx  = ajaxRequest(validacao, validador);
 //                appStatus("Esperado = " + o.title + " Local = " + o.name);
 //                if(o.title == o.name){
 //                    alert("Graças a Deus");

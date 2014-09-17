@@ -24,9 +24,9 @@ public class EstatisticasAlunoDAO {
     ConnectionPostgres cp = new ConnectionPostgres();
     Connection con;
 
-    public void inserirEstatisticas(Jogada j) throws SQLException {
+    public void inserirEstatistics(Jogada j) throws SQLException {
         con = cp.getconection();
-        String sql = "INSERT INTO jogada(data_jogada, jogador, fluxograma, scerto, erro) VALUES (?, ?, ?, ? ,?)";
+        String sql = "INSERT INTO jogada(data_jogada, jogador, fluxograma, acerto, erro) VALUES (?, ?, ?, ? ,?)";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setInt(1, j.getJogador().getId());
         ps.setDate(2, j.getData());
@@ -38,6 +38,17 @@ public class EstatisticasAlunoDAO {
         con.close();
     }
 
+    public void AtualizarEstatistics(Jogada j, Integer id) throws SQLException {
+        con = cp.getconection();
+        String sql = "UPDATE jogada SET acerto = ?, erro = ? where id = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setInt(1, j.getAcerto());
+        ps.setInt(2, j.getErro());
+        ps.setInt(3, id);
+        ps.executeUpdate();
+        ps.close();
+        con.close();
+    }
     public Integer getEstatistica(Date data, Integer idJogador, String fluxograma) throws SQLException {
         con = cp.getconection();
         String sql = "select * from jogada where data_jogada = ? and jogador = ? and fluxograma ilike ? ";
@@ -55,6 +66,26 @@ public class EstatisticasAlunoDAO {
 
 
 
+    }
+    public Jogada ListarEstatistica(Integer id) throws SQLException {
+        con = cp.getconection();
+        String sql = "SELECT * FROM jogada WHERE id = ? ";
+        PreparedStatement ps = con.prepareStatement(sql, ResultSet.CONCUR_UPDATABLE, ResultSet.TYPE_SCROLL_SENSITIVE);
+        ps.setInt(1, id);
+        ResultSet rs = ps.executeQuery();
+        Jogada j = null;
+        if (rs.first()) {
+            j = new Jogada();
+
+            AlunoDAO alunoDAO = new AlunoDAO();
+            Aluno jogador = alunoDAO.getAluno(rs.getInt("jogador"));
+            j.setJogador(jogador);
+            j.setData(rs.getDate("data_jogada"));
+            j.setFluxograma(rs.getString("fluxograma"));
+            j.setErro(rs.getInt("erro"));
+            j.setAcerto(rs.getInt("acerto"));
+        }
+        return j;
     }
 
     public List<Jogada> ListarEstatisticas(Integer idProfessor) throws SQLException {

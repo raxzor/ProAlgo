@@ -46,11 +46,11 @@ public class ListarEstatisticasCommand implements Icommand {
                     tupla.setData(split[2] + "/" + split[1] + "/" + split[0]);
                     tupla.setQtdacertos(0);
                     tupla.setQtderros(0);
-                    if (j.getResultado() == true) {
+//                    if (j.getResultado() == true) {
                         tupla.setQtdacertos(tupla.getQtdacertos() + 1);
-                    } else {
+//                    } else {
                         tupla.setQtderros(tupla.getQtderros() + 1);
-                    }
+//                    }
 
                 }
             }
@@ -92,31 +92,26 @@ public class ListarEstatisticasCommand implements Icommand {
         a.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         a.setFluxograma("Adição");
         a.setJogador(lulinha);
-        a.setResultado(Boolean.TRUE);
 
         Jogada b = new Jogada();
         b.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         b.setFluxograma("Adição");
         b.setJogador(lulinha);
-        b.setResultado(Boolean.FALSE);
 
         Jogada c = new Jogada();
         c.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         c.setFluxograma("Adição");
         c.setJogador(gilmar);
-        c.setResultado(Boolean.TRUE);
 
         Jogada d = new Jogada();
         d.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         d.setFluxograma("Adição");
         d.setJogador(gilmar);
-        d.setResultado(Boolean.FALSE);
 
         Jogada e = new Jogada();
         e.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         e.setFluxograma("Adição");
         e.setJogador(gilmar);
-        e.setResultado(Boolean.TRUE);
 
         estatisticas.add(a);
         estatisticas.add(b);
@@ -145,21 +140,21 @@ public class ListarEstatisticasCommand implements Icommand {
                 listTuplas.add(tupla);
                 for (int i = 0; i < listTuplas.size(); i++) {
                     if (listTuplas.get(i).getNomeAluno().toString().equals(tupla.getNomeAluno().toString())) {
-                        if (jogada.getResultado()) {
-                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
-                        } else {
-                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
-                        }
+//                        if (jogada.getResultado()) {
+//                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
+//                        } else {
+//                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
+//                        }
                     }
                 }
             } else {
                 for (int i = 0; i < listTuplas.size(); i++) {
                     if (listTuplas.get(i).getNomeAluno().toString().equals(tupla.getNomeAluno().toString())) {
-                        if (jogada.getResultado()) {
-                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
-                        } else {
-                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
-                        }
+//                        if (jogada.getResultado()) {
+//                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
+//                        } else {
+//                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
+//                        }
                     }
                 }
             }
@@ -183,31 +178,31 @@ public class ListarEstatisticasCommand implements Icommand {
         a.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         a.setFluxograma("Adição");
         a.setJogador(lulinha);
-        a.setResultado(Boolean.TRUE);
+//        a.setResultado(Boolean.TRUE);
 
         Jogada b = new Jogada();
         b.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         b.setFluxograma("Adição");
         b.setJogador(lulinha);
-        b.setResultado(Boolean.FALSE);
+//        b.setResultado(Boolean.FALSE);
 
         Jogada c = new Jogada();
         c.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         c.setFluxograma("Adição");
         c.setJogador(gilmar);
-        c.setResultado(Boolean.TRUE);
+//        c.setResultado(Boolean.TRUE);
 
         Jogada d = new Jogada();
         d.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         d.setFluxograma("Adição");
         d.setJogador(gilmar);
-        d.setResultado(Boolean.FALSE);
+//        d.setResultado(Boolean.FALSE);
 
         Jogada e = new Jogada();
         e.setData(new Date(Calendar.getInstance().getTimeInMillis()));
         e.setFluxograma("Adição");
         e.setJogador(gilmar);
-        e.setResultado(Boolean.TRUE);
+//        e.setResultado(Boolean.TRUE);
 
         estatisticas.add(a);
         estatisticas.add(b);
@@ -236,21 +231,21 @@ public class ListarEstatisticasCommand implements Icommand {
                 listTuplas.add(tupla);
                 for (int i = 0; i < listTuplas.size(); i++) {
                     if (listTuplas.get(i).getNomeAluno().toString().equals(tupla.getNomeAluno().toString())) {
-                        if (jogada.getResultado()) {
-                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
-                        } else {
-                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
-                        }
+//                        if (jogada.getResultado()) {
+//                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
+//                        } else {
+//                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
+//                        }
                     }
                 }
             } else {
                 for (int i = 0; i < listTuplas.size(); i++) {
                     if (listTuplas.get(i).getNomeAluno().toString().equals(tupla.getNomeAluno().toString())) {
-                        if (jogada.getResultado()) {
-                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
-                        } else {
-                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
-                        }
+//                        if (jogada.getResultado()) {
+//                            listTuplas.get(i).setQtdacertos(listTuplas.get(i).getQtdacertos() + 1);
+//                        } else {
+//                            listTuplas.get(i).setQtderros(listTuplas.get(i).getQtderros() + 1);
+//                        }
                     }
                 }
             }
