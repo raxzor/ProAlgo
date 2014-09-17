@@ -49,20 +49,28 @@ public class EstatisticasAlunoDAO {
         ps.close();
         con.close();
     }
-    public Integer getEstatistica(Date data, Integer idJogador, String fluxograma) throws SQLException {
+    public Jogada getEstatistica(Date data, Integer idJogador, String fluxograma) throws SQLException {
         con = cp.getconection();
         String sql = "select * from jogada where data_jogada = ? and jogador = ? and fluxograma ilike ? ";
         PreparedStatement ps = con.prepareStatement(sql, ResultSet.CONCUR_UPDATABLE, ResultSet.TYPE_SCROLL_SENSITIVE);
         ps.setInt(2, idJogador);
         ps.setDate(1, data);
         ps.setString(3, fluxograma);
-
         ResultSet rs = ps.executeQuery();
+        Jogada j = null;
         if (rs.first()) {
-            return rs.getInt("id");
-        } else {
-            return null;
+            j = new Jogada();
+
+            AlunoDAO alunoDAO = new AlunoDAO();
+            Aluno jogador = alunoDAO.getAluno(rs.getInt("jogador"));
+            j.setId(rs.getInt("id"));
+            j.setJogador(jogador);
+            j.setData(rs.getDate("data_jogada"));
+            j.setFluxograma(rs.getString("fluxograma"));
+            j.setErro(rs.getInt("erro"));
+            j.setAcerto(rs.getInt("acerto"));
         }
+        return j;
 
 
 

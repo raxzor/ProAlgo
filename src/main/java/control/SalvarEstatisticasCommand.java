@@ -23,12 +23,12 @@ public class SalvarEstatisticasCommand implements Icommand{
 
     @Override
     public String execute(HttpServletRequest request) {
-        String viviano = "Nome " + ((Usuario) request.getSession().getAttribute("usuario")).getNome() + " Data " +Calendar.getInstance().getTime()+ " Algoritmo " +request.getParameter("algoritmo") + " Resultado " + request.getParameter("result");
+        String user = "Nome " + ((Usuario) request.getSession().getAttribute("usuario")).getNome() + " Data " +Calendar.getInstance().getTime()+ " Algoritmo " +request.getParameter("algoritmo") + " Resultado " + request.getParameter("result");
         
         EstatisticasAlunoDAO estatisticasAlunoDAO = new EstatisticasAlunoDAO();
         try {
-            Integer est = estatisticasAlunoDAO.getEstatistica(new Date(Calendar.getInstance().getTimeInMillis()), ((Usuario) request.getSession().getAttribute("usuario")).getId(), request.getParameter("algoritmo"));
-            if( est == null){
+            Jogada est = estatisticasAlunoDAO.getEstatistica(new Date(Calendar.getInstance().getTimeInMillis()), ((Usuario) request.getSession().getAttribute("usuario")).getId(), request.getParameter("algoritmo"));
+            if(est == null){
                 Jogada jogada = new Jogada();
                 jogada.setData(new Date(Calendar.getInstance().getTimeInMillis()));
                 jogada.setFluxograma(request.getParameter("algoritmo"));
@@ -42,19 +42,19 @@ public class SalvarEstatisticasCommand implements Icommand{
                 }
                 estatisticasAlunoDAO.inserirEstatistics(jogada);
             }else{
-                Jogada jogada = new EstatisticasAlunoDAO().ListarEstatistica(est);
+                Jogada jogada = new EstatisticasAlunoDAO().ListarEstatistica(est.getId());
                 if(new Boolean(request.getParameter("result"))){
-                    jogada.setAcerto(jogada.getAcerto() + 1);
+                    jogada.setAcerto(jogada.getAcerto() +1);
                 }else{
-                    jogada.setAcerto(jogada.getErro() + 1);
+                    jogada.setErro(jogada.getErro() +1);
                 }
-                estatisticasAlunoDAO.AtualizarEstatistics(jogada, est);
+                estatisticasAlunoDAO.AtualizarEstatistics(jogada, est.getId());
             }
         } catch (SQLException ex) {
             Logger.getLogger(SalvarEstatisticasCommand.class.getName()).log(Level.SEVERE, null, ex);
         }
 //        System.out.println("");
-        return viviano;
+        return user;
     }
     
 }

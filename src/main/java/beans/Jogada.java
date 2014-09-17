@@ -11,13 +11,22 @@ import java.sql.Date;
  * @author Gilmar
  */
 public class Jogada {
-    
+    private Integer id;
     private Aluno jogador;
     private String fluxograma;
     private Date data;
     private Integer erro;
     private Integer acerto;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    
     public Aluno getJogador() {
         return jogador;
     }
