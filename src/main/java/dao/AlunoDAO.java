@@ -49,17 +49,16 @@ public class AlunoDAO {
     }
      
      public void atualizarAluno(Aluno a, Integer idAluno) throws SQLException{
+         new AutenticacaoDAO().alterarAutenticacaoAluno(idAluno, a.getLogin(), a.getSenha());
         con = cp.getconection();
-        String sql=" UPDATE aluno SET login = ?, senha = ?, nome = ?, curso = ?, tipo_deficiencia = ?, turma = ?, instituicao = ? where id = ?";
+        String sql=" UPDATE aluno SET nome = ?, curso = ?, tipo_deficiencia = ?, turma = ?, instituicao = ? where id = ?";
         PreparedStatement ps = con.prepareStatement(sql);
-        ps.setString(1, a.getLogin());
-        ps.setString(2, a.getSenha());
-        ps.setString(3, a.getNome());
-        ps.setString(4, a.getCurso());
-        ps.setString(5, a.getTipoDeficiencia());
-        ps.setString(6, a.getTurma());
-        ps.setString(7, a.getInstituicao());
-        ps.setInt(8, idAluno);
+        ps.setString(1, a.getNome());
+        ps.setString(2, a.getCurso());
+        ps.setString(3, a.getTipoDeficiencia());
+        ps.setString(4, a.getTurma());
+        ps.setString(5, a.getInstituicao());
+        ps.setInt(6, idAluno);
         
         ps.executeUpdate();
         ps.close();
@@ -166,6 +165,7 @@ public class AlunoDAO {
     }
      
      public void deletaAluno(Integer idAluno) throws SQLException{
+        new AutenticacaoDAO().deletaAluno(idAluno);
         con = cp.getconection();
         String sql = "DELETE FROM aluno WHERE id = ?";
         PreparedStatement ps = con.prepareStatement(sql);

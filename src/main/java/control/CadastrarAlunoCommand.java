@@ -50,7 +50,7 @@ public class CadastrarAlunoCommand implements Icommand{
                aluno.setId(alunoDAO.inserirAluno(aluno));
                 new AutenticacaoDAO().inserirAutenticacao(aluno);
             }else{
-                 System.out.println("ALTERARRRRRRRRRRRRRRRRR");
+                 System.out.println("ALTERARRRRRRRRRRRRRRRRR" + idAluno);
                 alunoDAO.atualizarAluno(aluno, new Integer(idAluno));
             }
         } catch (SQLException ex) {

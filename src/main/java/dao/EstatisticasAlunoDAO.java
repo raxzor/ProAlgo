@@ -28,16 +28,37 @@ public class EstatisticasAlunoDAO {
         con = cp.getconection();
         String sql = "INSERT INTO jogada(data_jogada, jogador, fluxograma, acerto, erro) VALUES (?, ?, ?, ? ,?)";
         PreparedStatement ps = con.prepareStatement(sql);
-        ps.setInt(1, j.getJogador().getId());
-        ps.setDate(2, j.getData());
+        ps.setInt(2, j.getJogador().getId());
+        ps.setDate(1, j.getData());
         ps.setString(3, j.getFluxograma());
-        ps.setInt(4, j.getErro());
-        ps.setInt(5, j.getAcerto());
+        ps.setInt(5, j.getErro());
+        ps.setInt(4, j.getAcerto());
         ps.execute();
         ps.close();
         con.close();
     }
 
+    public List<Jogada> getTodasJogadas() throws SQLException{
+        con = cp.getconection();
+        String sql = "SELECT * FROM jogada ORDER BY data_jogada ASC";
+        PreparedStatement ps = con.prepareStatement(sql, ResultSet.CONCUR_UPDATABLE, ResultSet.TYPE_SCROLL_SENSITIVE);
+        ResultSet rs = ps.executeQuery();
+        Jogada j = null;
+        List<Jogada> jogadas = new ArrayList<>();
+        while (rs.next()) {
+            j = new Jogada();
+
+            AlunoDAO alunoDAO = new AlunoDAO();
+            Aluno jogador = alunoDAO.getAluno(rs.getInt("jogador"));
+            j.setJogador(jogador);
+            j.setData(rs.getDate("data_jogada"));
+            j.setFluxograma(rs.getString("fluxograma"));
+            j.setErro(rs.getInt("erro"));
+            j.setAcerto(rs.getInt("acerto"));
+            jogadas.add(j);
+        }
+        return jogadas;
+    }
     public void AtualizarEstatistics(Jogada j, Integer id) throws SQLException {
         con = cp.getconection();
         String sql = "UPDATE jogada SET acerto = ?, erro = ? where id = ?";

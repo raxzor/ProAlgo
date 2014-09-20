@@ -58,6 +58,7 @@
                                 <input style="margin-left: 150px; margin-top: 55px;" type="submit" value="cadastrar">
                             </c:when>
                             <c:otherwise>
+                                <input type="hidden" name="id_aluno" value="${aluno.id}">
                                 <input type="submit" value="Alterar">
                             </c:otherwise>
                         </c:choose>

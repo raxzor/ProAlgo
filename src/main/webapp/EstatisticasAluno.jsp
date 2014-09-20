@@ -37,14 +37,15 @@
                         <td style="min-width:150px" align="center">Venceu</td>
                         <td style="min-width:100px" align="center">Falhou</td>
                     </tr>
-                    <tr>
-                        <td style="min-width:50px" align="center">${estatisticas.aluno.nome}</td>
-                        <td style="min-width:50px" align="center">${estatisticas.data}</td>
-                        <td style="min-width:50px" align="center">${estatisticas.fluxograma}</td>
-                        <td style="min-width:50px" align="center"></td>
-                        <td style="min-width:50px" align="center"></td>
-                    </tr>
-                    
+                    <c:forEach items="${estatisticas}" var="estatistica">
+                        <tr>
+                            <td style="min-width:50px" align="center">${estatistica.jogador.nome}</td>
+                            <td style="min-width:50px" align="center">${estatistica.data}</td>
+                            <td style="min-width:50px" align="center">${estatistica.fluxograma}</td>
+                            <td style="min-width:50px" align="center">${estatistica.acerto}</td>
+                            <td style="min-width:50px" align="center">${estatistica.erro}</td>
+                        </tr>
+                    </c:forEach>
                 </table>
 
             </div>

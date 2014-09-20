@@ -12,18 +12,7 @@
     </head>
     <body>
 <div class="logomarca"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
-<div id="validacao">
-        <form action="Controler" method="post">
-            <input type="hidden" name="action" value="10">
-            <div id="login">
-                Login: <input style="width: 100px; border-radius: 6px;" type="text" name="login" required="true" >
-            </div>
-            <div id="senha">
-            Senha: <input style="width: 100px; border-radius: 6px;"  type="password" name="senha" required="true">
-            <input type="submit" name="submit" value="Entrar">
-            </div>
-        </form>
-    </div>
+
 
 <ul id="menu">
      <li><a href="Inicio.jsp">Página Inicial</a><!-- Inicio item Sobre -->

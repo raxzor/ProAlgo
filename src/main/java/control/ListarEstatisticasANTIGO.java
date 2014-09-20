@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
  *
  * @author Gilmar
  */
-public class ListarEstatisticasCommand implements Icommand {
+public class ListarEstatisticasANTIGO implements Icommand {
 
     @Override
     public String execute(HttpServletRequest request) {
@@ -31,7 +31,7 @@ public class ListarEstatisticasCommand implements Icommand {
         try {
             estatisticas = estatisticasAlunoDAO.ListarEstatisticas(((Usuario) request.getSession().getAttribute("usuario")).getId());
         } catch (SQLException ex) {
-            Logger.getLogger(ListarEstatisticasCommand.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ListarEstatisticasANTIGO.class.getName()).log(Level.SEVERE, null, ex);
         }
         List<Tupla> tuplas = new ArrayList<>();
 

@@ -74,4 +74,46 @@ public class AutenticacaoDAO {
         ps.close();
         con.close();
     }
+    public void deletaAluno(Integer idAluno) throws SQLException{
+        con = cp.getconection();
+        String sql = "DELETE FROM autenticacao WHERE id_aluno = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setInt(1, idAluno);
+        
+        ps.executeUpdate();
+        ps.close();
+        con.close();
+        
+    }
+    
+    public void alterarAutenticacaoAluno(Integer idAluno, String login, String senha) throws SQLException{
+        con = cp.getconection();
+        String sql = "UPDATE autenticacao SET login = ?, senha = ? WHERE id_aluno = ?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setString(1, login);
+        ps.setString(2, senha);
+        ps.setInt(3, idAluno);
+        
+        ps.executeUpdate();
+        ps.close();
+        con.close();
+        
+    }
+    
+    public String[] autenticacaoAluno(Integer idAluno) throws SQLException{
+        con = cp.getconection();
+        String sql = "SELECT * FROM autenticacao WHERE id_aluno = ?";
+        PreparedStatement ps = con.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+        ps.setInt(1, idAluno);
+        ResultSet rs = ps.executeQuery();
+        String[] array = new String[2];
+        if(rs.first()){
+            array[0] = rs.getString("login");
+            array[1] = rs.getString("senha");
+        }
+        ps.executeQuery();
+        ps.close();
+        con.close();
+        return array;
+    }
 }

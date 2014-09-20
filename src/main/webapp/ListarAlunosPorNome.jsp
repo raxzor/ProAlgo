@@ -53,12 +53,12 @@
                             <td style="min-width:50px" align="center">${alunos.tipoDeficiencia}</td>
                             <td style="min-width:50px" align="center">${alunos.turma}</td>
 
-                        <form name ="editar aluno" action="Controler" method="post">
+                        <form name ="editaraluno" action="Controler" method="post">
                             <input type="hidden" name="action" value="8"/>
-                            <input type="hidden" name="idProfessor" value="${alunos.id}"/>
+                            <input type="hidden" name="idAluno" value="${alunos.id}"/>
                             <td style="min-width:50px" align="center"><input type="image" src="images/1407478992_edit-file.png"></td>
                         </form>  
-                        <form name ="deletar aluno" action="Controler" method="post">
+                        <form name ="deletaraluno" action="Controler" method="post">
                             <input type="hidden" name="action" value="7"/>
                             <input type="hidden" name="idAluno" value="${alunos.id}"/>
                             <td style="min-width:50px" align="center"><input type="image" src="images/1407476402_DeleteRed.png"></td>

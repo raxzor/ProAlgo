@@ -54,7 +54,7 @@ public class SalvarEstatisticasCommand implements Icommand{
             Logger.getLogger(SalvarEstatisticasCommand.class.getName()).log(Level.SEVERE, null, ex);
         }
 //        System.out.println("");
-        return user;
+        return "Aluno.jsp";
     }
     
 }
