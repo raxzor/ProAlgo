@@ -12,6 +12,12 @@ input.submit{
     color: #666666;
     
 }
+
+#login2{
+   width: 250px;
+   margin-left: 950px; 
+    
+}
 .formCadastroAluno2{
     width: 350px;
     height: 400px;

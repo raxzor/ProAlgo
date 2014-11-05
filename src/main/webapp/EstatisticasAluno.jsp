@@ -5,6 +5,7 @@
 <html>
     <head>
         <title>TCC</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script language="javascript" src="DragAndDrop.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
@@ -17,7 +18,7 @@
             <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
             <li><a href="ListarAlunosPorNome.jsp">Editar Aluno</a></li>
             <li><a href="ListarAlunosPorNome.jsp">Deletar Aluno</a></li>
-            <li><a href="CadastrarAluno.jsp">Estatísticas do Aluno</a></li>
+            <li><a href="Controler?action=12">Estatísticas dos Alunos</a></li>
             <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
             </li><!-- Fim item P�gina Inicial -->
         </li>

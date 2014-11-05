@@ -2,6 +2,11 @@ var largou = false;
 var validador;
 /*fun��o que serve para exibir as mensagens na div que ele est� sobre ela*/
 
+function alertCadastrar() {
+        alert("Usuário Cadastrado com Sucesso!");
+       }
+    
+
 function appStatus(msg){
     document.getElementById('app_status').innerHTML = msg;
 }
@@ -91,7 +96,7 @@ function validarSoma(){
     if(validacao == true){
         alert("Parabéns, Algoritmo resolvido com sucesso!");
      }else{
-        alert("Falha!");
+        alert("O algoritmo não está correto. Vamos tentar novamente?");
       }
     validador = "Soma";
     var x = ajaxRequest(validacao, validador);
@@ -156,10 +161,10 @@ function validarIMC(){
     if(validacao == true){
         alert("Parabéns, Algoritmo resolvido com sucesso!");
     }else{
-        alert("Falha!");
+        alert("O algoritmo não está correto. Vamos tentar novamente?");
       }
     validador = "IMC";
-    alert(validacao);
+    
     var xx = ajaxRequest(validacao, validador);
 //                appStatus("Esperado = " + o.title + " Local = " + o.name);
 //                if(o.title == o.name){
@@ -223,7 +228,7 @@ function validarNumeroPar(){
     if(validacao == true){
         alert("Parabéns, Algoritmo resolvido com sucesso!");
     }else{
-        alert("Falha!");
+        alert("O algoritmo não está correto. Vamos tentar novamente?");
       }
     validador = "NumeroParImpar";
     var xxx  = ajaxRequest(validacao, validador);

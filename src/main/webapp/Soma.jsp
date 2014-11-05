@@ -94,7 +94,7 @@
      <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
-<div class="descricaoProblema"><h3 class="textoInicial">Calcule a soma de dois números inteiros.</h3></div>
+<div class="descricaoProblema"><h3 class="textoInicial">Calcule a soma de dois números inteiros. Boa Sorte!</h3></div>
         <div class="AreaGeral">
         <div class="AreaInicialFiguras">
         

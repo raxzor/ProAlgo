@@ -91,7 +91,7 @@
     <li class="menu_right"><a href="Inicio.jsp">Sair</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 </ul>
-        <div class="descricaoProblema"><h3 class="textoInicial">Calcule o Indice de Massa Corpórea de uma pessoa e afirme se o seu IMC está saudável. O problema terá como parâmetros o Peso e a Altura de um indivíduo. Boa Sorte!</h3></div>
+        <div class="descricaoProblema"><h3 class="textoInicial">Descubra se o número informado é Par ou Ímpar. Boa Sorte!</h3></div>
         <div class="AreaGeral">
         <div class="AreaInicialFiguras">
         

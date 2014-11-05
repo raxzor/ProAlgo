@@ -12,8 +12,16 @@
     </head>
     <body>
 <div class="logomarcaProfessor"><img src="images/PROALGO.png" alt="Smiley face" height="150" width="150"></div>
+<div id="validacao">
+            
+            <div id="login2">
+                Bem vindo, Prof.  ${usuario.nome}. 
+            </div>
+            
+        </div> 
 <ul id="menu">
-     <li><a href="index.jsp">Página Inicial</a><!-- Inicio item Sobre -->
+         
+    <li><a href="index.jsp">Página Inicial</a><!-- Inicio item Sobre -->
 	</li><!-- Fim item P�gina Inicial -->
 	
         <li><a href="CadastrarAluno.jsp">Novo Aluno</a></li>
